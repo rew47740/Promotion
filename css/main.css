@@ -305,7 +305,8 @@ filter: sepia(999%);}
 } 
 .itemleft:hover,.itemright:hover{
     overflow: scroll;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+cursor: pointer;}
 .itemleftno{    
     padding: 20px;
     margin-bottom: 20px;
