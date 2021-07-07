@@ -1,5 +1,5 @@
-var audio = new Audio('/img/sound.mp3');
-var beep = new Audio('/img/beep.mp3');
+var audio = new Audio('img/sound.mp3');
+var beep = new Audio('img/beep.mp3');
 audio.loop=true;
 audio.volume=0.3;
 beep.volume=0.3;
