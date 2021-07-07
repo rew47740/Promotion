@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+    ::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 25px;
+}
+
+    ::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+    border-radius: 25px;
+}
+
+    ::-webkit-scrollbar-thumb
+{
+	background-color: rgb(85, 85, 85);
+	border: 2px solid #555555;
+    border-radius: 25px;
+}
+            </style>
+    </head>
+    <body>
+        <img src="/img/home.png" id="home" >
+        <header class="top">
+            <div class="page">
+                <button id="btn1">รายเดือน</button>
+                <button id="btn2">เติมเงิน</button>
+                <button id="btn3">แพ็กเกจเสริม</button>
+                <button id="btn4">โปรโมชั่นมือถือ</button>
+                <button id="btn5">อื่นๆ</button>
+            </div>
+            <button id=sortprice>เรียงตามราคา</button>
+            <button id=sortcall>เรียงตามปริมาณโทร</button>
+            <button id=sortcapacity>เรียงตามปริมาณเน็ต</button>
+            <button id=sortspeed>เรียงตามความเร็วเน็ต</button>
+            <div class = search>                
+                <input id="input" list = "list" type="text"placeholder="ค้นหา...">
+                <datalist id="list"></datalist>  
+                <button id="enter">ค้นหา</button>
+            </div>  
+        </header>
+        <button id=fiveg>5G</button>
+        <button id=fourg>4G</button>
+        <div class="main">
+            <img src="/img/ais.png" class="ais"  >
+            <img src="/img/dtac.png" class="dtac" >
+            <div class="Row">
+                <div id="Left"></div>  
+                <div id="Right"></div> 
+            </div>
+  
+            <script src="js/main.js"></script>
+        </div>
+        <footer class="bottom">
+            <p>About this website</p>
+            <p>Copyright 2030</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="main">
+            <img src="/img/play.png" id="play"  >
+            <div class ="page">
+                <h1 id="head">เลือกปริมาณที่ต้องการ</h1>
+                <p id ="to2">ราคา </p>
+                <input id="pricemin" list = "list" type="text"placeholder="0">
+                <p id ="to">-</p>
+                <input id="pricemax" list = "list" type="text"placeholder="9999">     
+                <p id ="ot">บาท</p>
+                <br><p id ="to2">ปริมาณโทร </p>
+                <input id="callmin" list = "list" type="text"placeholder="0">
+                <p id ="to">-</p>
+                <input id="callmax" list = "list" type="text"placeholder="9999">   
+                <p id ="ot">นาที </p>
+                <button id="callunlim">ไม่จำกัด</button>
+                <br><p id ="to2">ปริมาณเน็ต </p>
+                <input id="netmin" list = "list" type="text"placeholder="0">
+                <p id ="to">-</p>
+                <input id="netmax" list = "list" type="text"placeholder="9999">   
+                <p id ="ot">GB</p>
+                <button id="netunlim">ไม่จำกัด</button>
+                <br><p id ="to2">ความเร็วเน็ต </p>
+                <input id="speedmin" list = "list" type="text"placeholder="0">
+                <p id ="to">-</p>
+                <input id="speedmax" list = "list" type="text"placeholder="9999">   
+                <p id ="ot">Mbps</p>
+                <button id="speedunlim">Full Speed</button>
+                <br><button id="ok">ตกลง</button>
+                <button id="skip">รีเซ็ต</button>  
+                <script src="js/index.js"></script>
+            </div>            
+        </div>
+    </body>
+</html>
