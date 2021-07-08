@@ -1,0 +1,106 @@
+body {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
+    background-size: 64px 64px;
+    background-position: 0 0,32px 32px;
+    font-family: 'Prompt', sans-serif;
+    height: 100vh;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    margin: auto;
+}
+.page{
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+#rate{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+/* #btnlow,#btnmed,#btnhigh{
+    background-image: linear-gradient(to top, #e6f6ff 0%, #8cdbff 100%);
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    width: 250px;
+    height: 350px;
+    border: none;
+    color: rgb(29, 29, 29);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+#btnlow:hover,#btnmed:hover,#btnhigh:hover{
+    height: 390px;
+    width: 290px;
+    font-size: 35px;
+    background-image: linear-gradient(to top, #d3eeff 0%, #61cdff 100%);
+} */
+#btnlow:active,#btnmed:active,#btnhigh:active{
+    height: 400px;
+    width: 300px;
+    font-size: 40px;
+    background-image: linear-gradient(to top, #b7e3ff 0%, #3bc1ff 100%);
+}
+#btnlow,#btnmed,#btnhigh{
+    background-image: linear-gradient(to top, #e6f6ff 0%, #8cdbff 100%);
+    font-family: 'Prompt', sans-serif;
+    font-size: 30px;
+    width: 250px;
+    height: 350px;
+    border: none;
+    color: rgb(29, 29, 29);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    transform:
+    perspective(800px)
+    rotateY(25deg) scale(0.9)
+    rotateX(10deg);
+  filter: blur(0.7px);
+  opacity: 0.9;
+  transition: 0.6s ease all;
+}
+#btnlow:hover,#btnmed:hover,#btnhigh:hover{
+    height: 390px;
+    width: 290px;
+    font-size: 35px;
+    background-image: linear-gradient(to top, #d3eeff 0%, #61cdff 100%);
+    transform:
+      perspective(800px)
+      rotateY(-15deg)
+      translateY(-5px)
+      rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+#skip{
+    font-size: 20px;
+    margin-top: 30%;
+    position: fixed;
+    bottom: 30px;
+    left: 750px;
+}
+#previous{
+    font-size: 20px;
+    margin-top: 30%;
+    position: fixed;
+    bottom: 680px;
+    left: 50px;
+}
