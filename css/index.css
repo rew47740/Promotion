@@ -213,3 +213,16 @@ body {
 #skip:active{
     background-color: #647891;
 }
+#swap{
+    font-family: 'Prompt', sans-serif;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute;
+    right: 1px;
+    bottom: 5px;
+}
+#swap:active{
+    color: rgb(0, 42, 169);
+}

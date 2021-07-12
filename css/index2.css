@@ -2,7 +2,7 @@ body {
     animation: expand 1.5s ease-in-out forwards;
     background-color: #ffffff;
     opacity: 1;
-    background-image:  radial-gradient(#c1d86d 1.6px, transparent 1.6px), radial-gradient(#c8df78 1.6px, #ffffff 1.6px);
+    background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
     background-size: 64px 64px;
     background-position: 0 0,32px 32px;
     font-family: 'Prompt', sans-serif;
@@ -20,7 +20,7 @@ body {
     height: 600px;
     width: 1200px;
     border-radius: 25px;
-    background-image: linear-gradient(to top, #d4e49a 0%, #dee6c1 100%);
+    background-image: linear-gradient(to top, #9ccbf5 0%, #bfdaf1 100%);
     /* background-color: #9ccbf5; */
     margin: auto;
     padding-top: 10px;
@@ -105,7 +105,7 @@ body {
     position:relative;
     left: 89%;
     bottom: 17%;
-    background-color: #abe475;
+    background-color: #5c8fd3;
     font-family: 'Prompt', sans-serif;
     font-size: 50px;
     width: 200px;
@@ -129,7 +129,7 @@ body {
     height: 290px;
     width: 290px;
     font-size: 80px;
-    background-color: #9be458;
+    background-color: #0066ff;
     position:relative;
     left: 83%;
     bottom: 34%;
@@ -144,7 +144,7 @@ body {
 #callunlim{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     font-weight: bolder;
-    background-color: #f2f7e3;
+    background-color: #e3f4f7;
     color: rgb(29, 29, 29);
     font-family: 'Prompt', sans-serif;
     font-size: 18px;
@@ -159,7 +159,7 @@ body {
 #netunlim{    
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     font-weight: bolder;
-    background-color: #f2f7e3;
+    background-color: #e3f4f7;
     color: rgb(29, 29, 29);
     font-family: 'Prompt', sans-serif;
     font-size: 18px;
@@ -174,7 +174,7 @@ body {
 #speedunlim{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     font-weight: bolder;
-    background-color: #f2f7e3;
+    background-color: #e3f4f7;
     color: rgb(29, 29, 29);
     font-family: 'Prompt', sans-serif;
     font-size: 18px;
@@ -259,10 +259,10 @@ body {
     right: 29.50%;
 }
 #ok:active{
-    background-color: #a3e40b;
+    background-color: rgb(1, 48, 136);
 }
 #skip:active{
-    background-color: #96b848;
+    background-color: #647891;
 }
 /* .bg {
     animation:slide 5s ease-in-out infinite alternate;
@@ -292,3 +292,16 @@ body {
       transform:translateX(25%);
     }
   } */
+  #swap{
+    font-family: 'Prompt', sans-serif;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute;
+    right: 1px;
+    bottom: 5px;
+}
+#swap:active{
+    color: rgb(0, 42, 169);
+}

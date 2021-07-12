@@ -122,9 +122,9 @@ var netmax=9999;
     sessionStorage.setItem("speedmin", speedmin);
     sessionStorage.setItem("speedmax", speedmax);
 };
-// document.getElementById("skip").onclick = function () {
-//     location.href = "index2.html";
-// };
+document.getElementById("swap").onclick = function () {
+    location.href = "index2.html";
+};
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
      event.preventDefault();
@@ -149,7 +149,7 @@ document.getElementById("play").onclick = function () {
     document.getElementById("pricemin").addEventListener("click", mouseOver);
 
 document.getElementById("play").addEventListener("click", mouseOver);
-// document.getElementById("skip").addEventListener("mouseover", mouseOver);
+document.getElementById("swap").addEventListener("click", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;

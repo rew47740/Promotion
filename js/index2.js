@@ -51,7 +51,8 @@ document.getElementById("ok").onclick = function () {
     console.log(netmax)
     console.log(netmin)
 };
-document.getElementById("skip").onclick = function () {
+
+document.getElementById("swap").onclick = function () {
     location.href = "index.html";
 };
 document.getElementById("callunlim").onclick = function () {
@@ -88,7 +89,7 @@ document.getElementById("play").addEventListener("click", mouseOver);
 document.getElementById("callunlim").addEventListener("mouseover", mouseOver);
 document.getElementById("netunlim").addEventListener("mouseover", mouseOver);
 document.getElementById("speedunlim").addEventListener("mouseover", mouseOver);
-document.getElementById("skip").addEventListener("mouseover", mouseOver);
+document.getElementById("swap").addEventListener("click", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;
