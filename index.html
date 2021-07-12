@@ -10,37 +10,50 @@
     </head>
     <body>
         <div class="main">
-            <!-- <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div> -->
             <img src="img/play.png" id="play"  >
             <div class ="page">
                 <h1 id="head">เลือกปริมาณที่ต้องการ</h1>
                 <p id ="to2">ราคา </p>
-                <input id="pricemin" list = "list" type="text"placeholder="0">
-                <p id ="to">-</p>
-                <input id="pricemax" list = "list" type="text"placeholder="9999">     
+                <select id = "pricemin" onchange = "sprice()" >
+                    <option> ไม่ระบุ </option>
+                    <option> 0-299 </option>
+                    <option> 300-599 </option>
+                    <option> 600-899 </option>
+                    <option> 900 ขึ้นไป </option>
+                    </select>    
                 <p id ="ot">บาท</p>
                 <br><p id ="to2">ปริมาณโทร </p>
-                <input id="callmin" list = "list" type="text"placeholder="0">
-                <p id ="to">-</p>
-                <input id="callmax" list = "list" type="text"placeholder="9999">   
+                <select id = "callmin" onchange = "scall()" >
+                    <option> ไม่ระบุ </option>
+                    <option> 0-199 </option>
+                    <option> 200-499 </option>
+                    <option> 500-999 </option>
+                    <option> 1000 ขึ้นไป </option>
+                    <option> ไม่จำกัด </option>
+                    </select>  
                 <p id ="ot">นาที </p>
-                <button id="callunlim">ไม่จำกัด</button>
                 <br><p id ="to2">ปริมาณเน็ต </p>
-                <input id="netmin" list = "list" type="text"placeholder="0">
-                <p id ="to">-</p>
-                <input id="netmax" list = "list" type="text"placeholder="9999">   
+                <select id = "netmin" onchange = "snet()" >
+                    <option> ไม่ระบุ </option>
+                    <option> 0-9 </option>
+                    <option> 10-39 </option>
+                    <option> 40-69 </option>
+                    <option> 70 ขึ้นไป </option>
+                    <option> ไม่จำกัด </option>
+                    </select>   
                 <p id ="ot">GB</p>
-                <button id="netunlim">ไม่จำกัด</button>
                 <br><p id ="to2">ความเร็วเน็ต </p>
-                <input id="speedmin" list = "list" type="text"placeholder="0">
-                <p id ="to">-</p>
-                <input id="speedmax" list = "list" type="text"placeholder="9999">   
+                <select id = "speedmin" onchange = "sspeed()" >
+                    <option > ไม่ระบุ </option>
+                    <option> 0-99 </option>
+                    <option> 100-299 </option>
+                    <option> 300-599 </option>
+                    <option> 600 ขึ้นไป </option>
+                    <option> Full Speed </option>
+                    </select> 
                 <p id ="ot">Mbps</p>
-                <button id="speedunlim">Full Speed</button>
                 <br><button id="ok">ตกลง</button>
-                <button id="skip">ค่าเริ่มต้น</button>  
+                <!-- <button id="skip">ค้นหาละเอียด</button>   -->
                 <script src="js/index.js"></script>
             </div>            
         </div>

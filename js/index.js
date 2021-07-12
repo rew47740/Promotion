@@ -3,40 +3,113 @@ var beep = new Audio('img/beep.mp3');
 audio.loop=true;
 audio.volume=0.3;
 beep.volume=0.3;
+var priceinput ='';
+var callinput ='';
+var netinput ='';
+var speedinput ='';
 var x = 0;
 var play = document.getElementById("play");
 play.style.filter="grayscale(100%)";
-document.getElementById("ok").onclick = function () {
-    var pricemin = document.getElementById('pricemin').value;
-    var pricemax = document.getElementById('pricemax').value;
-    var callmin = document.getElementById('callmin').value;
-    var callmax = document.getElementById('callmax').value;
-    var netmin = document.getElementById('netmin').value;
-    var netmax = document.getElementById('netmax').value;
-    var speedmin = document.getElementById('speedmin').value;
-    var speedmax = document.getElementById('speedmax').value;
-    if (pricemin==""){
+document.getElementById("ok").onclick = function () {   
+var pricemin = 0;
+var pricemax =9999;
+var callmin =0;
+var callmax=9999;
+var speedmin =0;
+var speedmax=9999;
+var netmin =0;
+var netmax=9999;
+
+    if (priceinput=="ไม่ระบุ"){
         pricemin = 0
-    }
-    if (pricemax==""){
         pricemax = 9999
     }
-    if (callmin==""){
-        callmin = 0
+    if (priceinput=="0-299"){
+        pricemin = 0
+        pricemax = 299
     }
-    if (callmax==""){
+    if (priceinput=="300-599"){
+        pricemin = 300
+        pricemax = 599
+    }
+    if (priceinput=="600-899"){
+        pricemin = 600
+        pricemax = 899
+    }
+    if (priceinput=="900 ขึ้นไป"){
+        pricemin = 900
+        pricemax = 9999
+    }
+    if (callinput=="ไม่ระบุ"){
+        callmin = 0
         callmax = 9999
     }
-    if (netmin==""){
-        netmin = 0
+    if (callinput=="0-199"){
+        callmin = 0
+        callmax = 199
     }
-    if (netmax==""){
+    if (callinput=="200-499"){
+        callmin = 200
+        callmax = 499
+    }
+    if (callinput=="500-999"){
+        callmin = 500
+        callmax = 999
+    }
+    if (callinput=="1000 ขึ้นไป"){
+        callmin = 1000
+        callmax = 9999
+    }
+    if (callinput=="ไม่จำกัด"){
+        callmin = 9999
+        callmax = 9999
+    }
+    if (netinput=="ไม่ระบุ"){
+        netmin = 0
         netmax = 9999
     }
-    if (speedmin==""){
-        speedmin = 0
+    if (netinput=="0-9"){
+        netmin = 0
+        netmax = 9
     }
-    if (speedmax==""){
+    if (netinput=="10-39"){
+        netmin = 10
+        netmax = 39
+    }
+    if (netinput=="40-69"){
+        netmin = 40
+        netmax = 69
+    }
+    if (netinput=="70 ขึ้นไป"){
+        netmin = 70
+        netmax = 9999
+    }
+    if (netinput=="ไม่จำกัด"){
+        netmin = 9999
+        netmax = 9999
+    }
+    if (speedinput=="ไม่ระบุ"){
+        speedmin = 0
+        speedmax = 9999
+    }
+    if (speedinput=="0-99"){
+        speedmin = 0
+        speedmax = 99
+    }
+    if (speedinput=="100-299"){
+        speedmin = 100
+        speedmax = 299
+    }
+    if (speedinput=="300-599"){
+        speedmin = 300
+        speedmax = 599
+    }
+    if (speedinput=="600 ขึ้นไป"){
+        speedmin = 600
+        speedmax = 9999
+    }
+    if (speedinput=="Full Speed"){
+        speedmin = 9999
         speedmax = 9999
     }
     location.href = "main.html";
@@ -48,49 +121,10 @@ document.getElementById("ok").onclick = function () {
     sessionStorage.setItem("netmax", netmax);
     sessionStorage.setItem("speedmin", speedmin);
     sessionStorage.setItem("speedmax", speedmax);
-    console.log(netmax)
-    console.log(netmin)
 };
-document.getElementById("skip").onclick = function () {
-    document.getElementById('pricemin').value="";
-    document.getElementById('pricemax').value="";
-    document.getElementById('callmin').value="";
-    document.getElementById('callmax').value="";
-    document.getElementById('netmin').value="";
-    document.getElementById('netmax').value="";
-    document.getElementById('speedmin').value="";
-    document.getElementById('speedmax').value="";
-    // var pricemin = 0
-    // var pricemax = 9999
-    // var callmin = 0
-    // var callmax = 9999
-    // var netmin = 0
-    // var netmax = 9999
-    // var speedmin = 0
-    // var speedmax = 9999 
-    // location.href = "main.html";
-    // sessionStorage.setItem("pricemin", pricemin);
-    // sessionStorage.setItem("pricemax", pricemax);
-    // sessionStorage.setItem("callmin", callmin);
-    // sessionStorage.setItem("callmax", callmax);
-    // sessionStorage.setItem("netmin", netmin);
-    // sessionStorage.setItem("netmax", netmax);
-    // sessionStorage.setItem("speedmin", speedmin);
-    // sessionStorage.setItem("speedmax", speedmax);
-    
-};
-document.getElementById("callunlim").onclick = function () {
-    callmax.value="ไม่จำกัด";
-    callmin.value="ไม่จำกัด";
-}
-document.getElementById("netunlim").onclick = function () {
-    netmax.value="ไม่จำกัด"
-    netmin.value="ไม่จำกัด"
-}
-document.getElementById("speedunlim").onclick = function () {
-    speedmax.value="Full Speed"
-    speedmin.value="Full Speed"
-}
+// document.getElementById("skip").onclick = function () {
+//     location.href = "index2.html";
+// };
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
      event.preventDefault();
@@ -109,13 +143,31 @@ document.getElementById("play").onclick = function () {
         play.style.filter="grayscale(100%)";
     }
     }
+    document.getElementById("netmin").addEventListener("click", mouseOver);
+    document.getElementById("callmin").addEventListener("click", mouseOver);
+    document.getElementById("speedmin").addEventListener("click", mouseOver);
+    document.getElementById("pricemin").addEventListener("click", mouseOver);
+
 document.getElementById("play").addEventListener("click", mouseOver);
-document.getElementById("callunlim").addEventListener("mouseover", mouseOver);
-document.getElementById("netunlim").addEventListener("mouseover", mouseOver);
-document.getElementById("speedunlim").addEventListener("mouseover", mouseOver);
-document.getElementById("skip").addEventListener("mouseover", mouseOver);
+// document.getElementById("skip").addEventListener("mouseover", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;
   beep.play();
 }
+function sprice() {
+    var price = document.getElementById("pricemin");
+    priceinput = price.options[price.selectedIndex].text;
+    }
+function scall() {
+    var call = document.getElementById("callmin");
+    callinput = call.options[call.selectedIndex].text;
+    }
+function sspeed() {
+    var speed = document.getElementById("speedmin");
+    speedinput = speed.options[speed.selectedIndex].text;
+    }
+function snet() {
+    var net = document.getElementById("netmin");
+    netinput = net.options[net.selectedIndex].text;
+    }
