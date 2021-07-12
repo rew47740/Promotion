@@ -8,6 +8,12 @@ var netmax = sessionStorage.getItem("netmax");
 var netmin = sessionStorage.getItem("netmin");
 var speedmax = sessionStorage.getItem("speedmax");
 var speedmin = sessionStorage.getItem("speedmin");
+if (netmax=="ไม่จำกัด"){netmax=9999}
+if (netmin=="ไม่จำกัด"){netmin=9999}
+if (callmax=="ไม่จำกัด"){callmax=9999}
+if (callmin=="ไม่จำกัด"){callmin=9999}
+if (speedmax=="Full Speed"){speedmax=9999}
+if (speedmin=="Full Speed"){speedmin=9999}
 fetch("json/Pronew.json")
 .then((response) => response.json())
 .then(function(dat){
