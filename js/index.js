@@ -68,20 +68,20 @@ var netmax=9999;
         netmin = 0
         netmax = 9999
     }
-    if (netinput=="0-9"){
+    if (netinput=="0-19"){
         netmin = 0
-        netmax = 9
+        netmax = 19
     }
-    if (netinput=="10-39"){
-        netmin = 10
-        netmax = 39
+    if (netinput=="20-49"){
+        netmin = 20
+        netmax = 49
     }
-    if (netinput=="40-69"){
-        netmin = 40
-        netmax = 69
+    if (netinput=="50-79"){
+        netmin = 50
+        netmax = 79
     }
-    if (netinput=="70 ขึ้นไป"){
-        netmin = 70
+    if (netinput=="80 ขึ้นไป"){
+        netmin = 80
         netmax = 9999
     }
     if (netinput=="ไม่จำกัด"){
