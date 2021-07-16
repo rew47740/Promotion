@@ -20,18 +20,21 @@ fetch("json/Pronew.json")
 data = dat.filter(function(obj) {return obj.call >= callmin && obj.call <= callmax && obj.netcapacity >= netmin && obj.netcapacity <= netmax && obj.price >= pricemin && obj.price <= pricemax && obj.speed >= speedmin && obj.speed <= speedmax });
 dataleft=data.filter(function(obj) {return obj.ค่าย=="AIS" });
 dataright=data.filter(function(obj) {return obj.ค่าย=="DTAC" });
+datarightest=data.filter(function(obj) {return obj.ค่าย=="3BB" });
 showleft = document.getElementById("Left");
 showright = document.getElementById("Right");
 showleft.innerHTML ='';
 showright.innerHTML ='';
 resultleft=dataleft;
 resultright=dataright;
+resultrightest=datarightest;
 var sortp = 0;
 var sortc = 0;
 var sortca = 0;
 var sorts = 0;
 var g=0;
 var gg =0;
+var bb =0;
 for (i = 0;i<dataleft.length;i++){
   if (dataleft[i].Type!==""){showleft.innerHTML += '<div class="typeleft">'+dataleft[i].Type+'</div>'}
     showleft.innerHTML += '<div class="typesleft">'+dataleft[i].ประเภทแพ็กเกจ+'</div>';
@@ -69,13 +72,13 @@ function search(){
         resultleft = dataleft
         for (i = 0;i<resultleft.length;i++){
             showleft.innerHTML += '<div class="typesleft">'+resultleft[i].ประเภทแพ็กเกจ+'</div>';
-            showleft.innerHTML += '<div class="typeleft">'+resultleft[i].Type+'</div>';
+            if (resultleft[i].Type!==""){showleft.innerHTML += '<div class="typeleft">'+resultleft[i].Type+'</div>'}
             showleft.innerHTML += '<div class="itemleft" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultleft[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultleft[i].ค่าบริการ+" "+resultleft[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultleft[i].โทรในเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultleft[i].โทรนอกเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultleft[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultleft[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultleft[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultleft[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultleft[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultleft[i].Wifi+"<br />"+"<b>SMS : </b>"+resultleft[i].SMS+"<b> / MMS : </b>"+resultleft[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultleft[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultleft[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultleft[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultleft[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
         }  
         resultright = dataright 
         for (i = 0;i<resultright.length;i++){
             showright.innerHTML += '<div class="typesright">'+resultright[i].ประเภทแพ็กเกจ+'</div>';
-            showright.innerHTML += '<div class="typeright">'+resultright[i].Type+'</div>';
+            if (resultright[i].Type!==""){showright.innerHTML += '<div class="typeright">'+resultright[i].Type+'</div>'}
             showright.innerHTML += '<div class="itemright" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultright[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultright[i].ค่าบริการ+" "+resultright[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultright[i].โทรในเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultright[i].โทรนอกเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultright[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultright[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultright[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultright[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultright[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultright[i].Wifi+"<br />"+"<b>SMS : </b>"+resultright[i].SMS+"<b> / MMS : </b>"+resultright[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultright[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultright[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultright[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultright[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
         }
         return resultleft,resultright;  }
@@ -85,7 +88,7 @@ function search(){
     });     
     for (i = 0;i<resultleft.length;i++){
         showleft.innerHTML += '<div class="typesleft">'+resultleft[i].ประเภทแพ็กเกจ+'</div>';
-        showleft.innerHTML += '<div class="typeleft">'+resultleft[i].Type+'</div>';
+        if (resultleft[i].Type!==""){showleft.innerHTML += '<div class="typeleft">'+resultleft[i].Type+'</div>'}
         showleft.innerHTML += '<div class="itemleft" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultleft[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultleft[i].ค่าบริการ+" "+resultleft[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultleft[i].โทรในเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultleft[i].โทรนอกเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultleft[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultleft[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultleft[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultleft[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultleft[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultleft[i].Wifi+"<br />"+"<b>SMS : </b>"+resultleft[i].SMS+"<b> / MMS : </b>"+resultleft[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultleft[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultleft[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultleft[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultleft[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
     }
     resultright = dataright.filter(function(obj) {
@@ -93,7 +96,7 @@ function search(){
     });      
     for (i = 0;i<resultright.length;i++){
         showright.innerHTML += '<div class="typesright">'+resultright[i].ประเภทแพ็กเกจ+'</div>';
-        showright.innerHTML += '<div class="typeright">'+resultright[i].Type+'</div>';
+        if (resultright[i].Type!==""){showright.innerHTML += '<div class="typeright">'+resultright[i].Type+'</div>'}
         showright.innerHTML += '<div class="itemright" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultright[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultright[i].ค่าบริการ+" "+resultright[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultright[i].โทรในเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultright[i].โทรนอกเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultright[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultright[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultright[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultright[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultright[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultright[i].Wifi+"<br />"+"<b>SMS : </b>"+resultright[i].SMS+"<b> / MMS : </b>"+resultright[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultright[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultright[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultright[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultright[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
     }
     if(resultleft.length==0){
@@ -105,6 +108,7 @@ function search(){
     return resultleft,resultright;
 }}
 function showdata1 (){
+  bb=0;
   sortp = 0;
   sortc = 0;
   sortca = 0;
@@ -145,6 +149,7 @@ function showdata1 (){
     return resultleft,resultright;
 }
 function showdata2 (){
+  bb=0;
   sortp = 0;
   sortc = 0;
   sortca = 0;
@@ -186,6 +191,7 @@ function showdata2 (){
 
 }
 function showdata3 (){
+  bb=0;
   sortp = 0;
   sortc = 0;
   sortca = 0;
@@ -227,6 +233,7 @@ function showdata3 (){
  
 }
 function showdata4 (){
+  bb=0;
   sortp = 0;
   sortc = 0;
   sortca = 0;
@@ -265,6 +272,7 @@ function showdata4 (){
   return resultleft,resultright;
 }
 function showdata5 (){
+  bb=1;
   sortp = 0;
   sortc = 0;
   sortca = 0;
@@ -289,20 +297,21 @@ function showdata5 (){
     showleft.innerHTML += '<div class="itemleft" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultleft[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultleft[i].ค่าบริการ+" "+resultleft[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultleft[i].โทรในเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultleft[i].โทรนอกเครือข่าย+" "+resultleft[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultleft[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultleft[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultleft[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultleft[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultleft[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultleft[i].Wifi+"<br />"+"<b>SMS : </b>"+resultleft[i].SMS+"<b> / MMS : </b>"+resultleft[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultleft[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultleft[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultleft[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultleft[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
 }
   showright.innerHTML ='';
-  resultright = dataright.filter(function(obj) {return obj.ประเภทแพ็กเกจ !== 'รายเดือน'&& obj.ประเภทแพ็กเกจ !== 'เติมเงิน'&& obj.ประเภทแพ็กเกจ !== 'แพ็กเกจเสริม'&& obj.ประเภทแพ็กเกจ !== 'โปรโมชั่นมือถือ'});
-  for (i = 0;i<resultright.length;i++){
-    showright.innerHTML += '<div class="typesright">'+resultright[i].ประเภทแพ็กเกจ+'</div>';
-    showright.innerHTML += '<div class="itemright" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultright[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultright[i].ค่าบริการ+" "+resultright[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultright[i].โทรในเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultright[i].โทรนอกเครือข่าย+" "+resultright[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultright[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultright[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultright[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultright[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultright[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultright[i].Wifi+"<br />"+"<b>SMS : </b>"+resultright[i].SMS+"<b> / MMS : </b>"+resultright[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultright[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultright[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultright[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultright[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
+  resultrightest = datarightest.filter(function(obj) {return obj.ประเภทแพ็กเกจ !== 'รายเดือน'&& obj.ประเภทแพ็กเกจ !== 'เติมเงิน'&& obj.ประเภทแพ็กเกจ !== 'แพ็กเกจเสริม'&& obj.ประเภทแพ็กเกจ !== 'โปรโมชั่นมือถือ'});
+  for (i = 0;i<resultrightest.length;i++){
+    showright.innerHTML += '<div class="typesright">'+resultrightest[i].ประเภทแพ็กเกจ+'</div>';
+    showright.innerHTML += '<div class="itemright" tabindex="0">'+"<b>ชื่อแพ็กเกจ : </b>"+resultrightest[i].ชื่อแพ็กเกจ+"<br />"+"<b>ราคา : </b>"+resultrightest[i].ค่าบริการ+" "+resultrightest[i].หน่วยราคา+"<br />"+"<b>โทรในเครือข่าย : </b>"+resultrightest[i].โทรในเครือข่าย+" "+resultrightest[i].เงื่อนไขโทร+"<br />"+"<b>โทรนอกเครือข่าย : </b>"+resultrightest[i].โทรนอกเครือข่าย+" "+resultrightest[i].เงื่อนไขโทร+"<br />"+"<b>ส่วนเกินค่าโทร (ในเครือข่าย) : </b>"+resultrightest[i].ส่วนเกินค่าโทรในเครือข่าย+"<br />"+"<b>ส่วนเกินค่าโทร (นอกเครือข่าย) </b>: "+resultrightest[i].ส่วนเกินค่าโทรนอกเครือข่าย+"<br />"+"<b>ปริมาณเน็ต : </b>"+resultrightest[i].ปริมาณเน็ต+"<br />"+"<b>ความเร็วเน็ตสูงสุด : </b>"+resultrightest[i].ความเร็วเน็ตสูงสุด+"<br />"+"<b>ส่วนเกินค่าเน็ต : </b>"+resultrightest[i].ส่วนเกินค่าเน็ต+"<br />"+"<b>Wifi : </b>"+resultrightest[i].Wifi+"<br />"+"<b>SMS : </b>"+resultrightest[i].SMS+"<b> / MMS : </b>"+resultrightest[i].MMS+ "<br />"+"<b>ส่วนเกิน SMS : </b>"+resultrightest[i].ส่วนเกินSMS+"<br />"+"<b>ส่วนเกิน MMS : </b>"+resultrightest[i].ส่วนเกินMMS+"<br />"+"<b>ของแถม : </b>"+resultrightest[i].ของแถม+ "<br />"+"<b>เงื่อนไขเพิ่มเติม : </b>"+resultrightest[i].เงื่อนไขเพิ่มเติม+ "<br />"+" "+ "<br />"+" "+"<br />"+"<br />"+'</div>';
  }
   if(resultleft.length==0){
       showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
     }
-    if(resultright.length==0){
+    if(resultrightest.length==0){
       showright.innerHTML='<div class="itemrightno">'+"ไม่พบข้อมูล"+'</div>';
     }
-  return resultleft,resultright;
+  return resultleft,resultrightest;
 
 }
+
 function four(){
   gg=0;
   if (g == 0){
@@ -392,6 +401,12 @@ function five(){
 function price(prop) {  
   g=0;
   gg=0;
+  if (bb==0){
+    resultright=resultright;
+  }
+  else if(bb==1){
+    resultright=resultrightest;
+  }
   fiveg.style.color = "rgb(255, 255, 255)"
   fourg.style.color = "rgb(255, 255, 255)"  
     showright.innerHTML =''
@@ -481,6 +496,12 @@ function price(prop) {
 function netcapacity(prop) {  
   g=0;
   gg=0;
+  if (bb==0){
+    resultright=resultright;
+  }
+  else if(bb==1){
+    resultright=resultrightest;
+  }
   fiveg.style.color = "rgb(255, 255, 255)"
   fourg.style.color = "rgb(255, 255, 255)"   
   showright.innerHTML =''
@@ -570,6 +591,18 @@ function netcapacity(prop) {
 function call(prop) {    
   g=0;
   gg=0;
+  if (bb==0){
+    resultright=resultright;
+  }
+  else if(bb==1){
+    resultright=resultrightest;
+  }
+  if (bb==0){
+    resultright=resultright;
+  }
+  else if(bb==1){
+    resultright=resultrightest;
+  }
   fiveg.style.color = "rgb(255, 255, 255)"
   fourg.style.color = "rgb(255, 255, 255)" 
   showright.innerHTML =''
@@ -659,6 +692,12 @@ if(resultright.length==0){
 function speed(prop) {    
   g=0;
   gg=0;
+  if (bb==0){
+    resultright=resultright;
+  }
+  else if(bb==1){
+    resultright=resultrightest;
+  }
   fiveg.style.color = "rgb(255, 255, 255)"
   fourg.style.color = "rgb(255, 255, 255)" 
     showright.innerHTML =''
@@ -764,6 +803,17 @@ press2.addEventListener('click',showdata2);
 press3.addEventListener('click',showdata3);
 press4.addEventListener('click',showdata4);
 press5.addEventListener('click',showdata5);
+press1.addEventListener('click',showg);
+press2.addEventListener('click',showg);
+press3.addEventListener('click',showg);
+press4.addEventListener('click',showg);
+press5.addEventListener('click',hideg);
+press1.addEventListener('click',pictureChange2);
+press2.addEventListener('click',pictureChange2);
+press3.addEventListener('click',pictureChange2);
+press4.addEventListener('click',pictureChange2);
+press5.addEventListener('click',pictureChange1);
+enter.addEventListener('click',pictureChange2);
 enter.addEventListener('click',search);
 sortprice.addEventListener('click',price);
 sortcapacity.addEventListener('click',netcapacity);
@@ -787,8 +837,8 @@ var list = document.getElementById('list');
 itemName.forEach(function(item){
    var option = document.createElement('option');
    option.value = item;
-   list.appendChild(option);
-});
+   list.appendChild(option)
+  });
 itemSpeed.forEach(function(item){
   var option = document.createElement('option');
   option.value = item;
@@ -802,13 +852,11 @@ itemCapacity.forEach(function(item){
 itemPrice.forEach(function(item){
   var option = document.createElement('option');
   option.value = item;
-  // if(!option.contains(option))
   list.appendChild(option);
 });
 itemPrice2.forEach(function(item){
   var option = document.createElement('option');
   option.value = item;
-  // if(!option.contains(option))
   list.appendChild(option);
 });
 itemCall.forEach(function(item){
@@ -821,6 +869,28 @@ itemType.forEach(function(item){
   option.value = item;
   list.appendChild(option);
 });
-})
+function pictureChange1()
+{
+ document.getElementById("imgdtac").src="img/3bb.png";
+ document.getElementById("imgais").src="img/aisfibre.png";
+}
+function pictureChange2()
+{
+ document.getElementById("imgdtac").src="img/dtac.png";
+ document.getElementById("imgais").src="img/ais.png";
+}
+function showg()
+{
+ document.getElementById("fiveg").style.visibility = 'visible';
+ document.getElementById("fourg").style.visibility = 'visible';
+}
+function hideg()
+{
+  document.getElementById("fiveg").style.visibility = 'hidden';
+  document.getElementById("fourg").style.visibility = 'hidden';
+}
+
+  })
+
 
 

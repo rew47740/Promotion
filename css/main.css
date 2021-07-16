@@ -17,7 +17,7 @@ body {
     margin:auto;
     padding-top: 40px;
     text-align:left;  }
-    .Row {
+.Row {
         display: table;
         width: 100%; 
         table-layout: fixed; 
@@ -47,6 +47,7 @@ body {
     margin-top: 15px;
     line-height: 1.6;
     }
+
 #btn1{
     font-family: 'Prompt', sans-serif;
     font-size: 25px;
@@ -192,17 +193,22 @@ body {
 #sortcall:focus,#sortprice:focus,#sortcapacity:focus,#sortspeed:focus{
     color:rgb(255, 200, 97);
     font-weight:bolder;}
-.ais{
-    display: inline-block;
+#ais{
+    display: table-cell;
     width: 12%;
-    float: left;
     margin-left: 20px;
     margin-top:10px;}
-.dtac{
-    display: inline-block;
+#dtac{
+    display: table-cell;
     width: 12%;
-    margin-left:38%;
-    margin-top:10px;}
+    margin-top:10px;
+    background-image: "img/dtac.png";}
+#imgais{
+    margin-left: 5%;
+    width: 20%;}
+#imgdtac{
+    margin-left: 5%;
+    width: 20%;}
 
 
 .top {
@@ -240,13 +246,24 @@ body {
 #btn1:active,#btn2:active,#btn3:active,#btn4:active{
     color:rgb(255, 200, 97);
     font-weight:bolder;}
-#home{
-    float: right;
-    margin: 40px;
+#change{
     width: 20px;
-cursor: pointer;}
+    position: absolute;
+    right: 5.5%;
+    top:5.5%;
+    cursor: pointer;
+    }
+#change:hover{
+    filter: opacity(0.5);
+}
+#home{
+    position: absolute;
+    right: 2.5%;
+    top:5.5%;
+    width: 20px;
+    cursor: pointer;}
 #home:hover{
-filter: sepia(999%);}
+    filter: opacity(0.5);}
 .itemleft{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     padding: 20px;
@@ -259,6 +276,7 @@ filter: sepia(999%);}
     height: 500px;
     overflow: hidden;
     transition: 0.3s ease all;
+    letter-spacing: 1px;
 }
 
 .itemright{
@@ -273,13 +291,14 @@ filter: sepia(999%);}
     height: 500px; 
     overflow: hidden;   
     transition: 0.3s ease all;
+        letter-spacing: 1px;
 }
 .itemleft:focus{
     font-size: 18px;
     position: fixed;
     left: 2%;
     top: 2.5%;
-    width: 45%;
+    width: 44%;
     height:90%;
     z-index: 1;
     overflow: scroll;
@@ -289,9 +308,9 @@ filter: sepia(999%);}
 .itemright:focus{
     font-size: 18px;
     position: fixed;
-    right: 1%;
+    right: 1.5%;
     top: 2.5%;
-    width: 45%;
+    width: 44%;
     height:90%;
     z-index: 1;
     overflow: scroll;

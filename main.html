@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+    <script>      
+    </script>
     <head>
         <meta charset="utf-8">
         <title>Index</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link id="pagestyle" rel="stylesheet" href="css/main.css">
+        <script>
+            var x =0;
+            function swapStyleSheet(sheet){
+                if(x==0){
+                document.getElementById('pagestyle').setAttribute('href', "css/main2.css");
+                x=1;
+                }
+                else{
+                    document.getElementById('pagestyle').setAttribute('href', "css/main.css");
+                    x=0;
+                }
+            }
+            </script>
         <style>
     ::-webkit-scrollbar-track
 {
@@ -31,6 +46,7 @@
             </style>
     </head>
     <body>
+        <img src="img/moon.png" id ="change" onclick="swapStyleSheet('css/main2.css')">
         <img src="img/home.png" id="home" >
         <header class="top">
             <div class="page">
@@ -38,7 +54,7 @@
                 <button id="btn2">เติมเงิน</button>
                 <button id="btn3">แพ็กเกจเสริม</button>
                 <button id="btn4">โปรโมชั่นมือถือ</button>
-                <button id="btn5">อื่นๆ</button>
+                <button id="btn5">อินเทอร์เน็ต</button>
             </div>
             <button id=sortprice>เรียงตามราคา</button>
             <button id=sortcall>เรียงตามปริมาณโทร</button>
@@ -53,8 +69,10 @@
         <button id=fiveg>5G</button>
         <button id=fourg>4G</button>
         <div class="main">
-            <img src="img/ais.png" class="ais"  >
-            <img src="img/dtac.png" class="dtac" >
+            <div class="Row">
+                <div id="ais"><img src="img/ais.png" id="imgais"  ></div>  
+                <div id="dtac"><img src="img/dtac.png" id="imgdtac" ></div>   
+            </div>
             <div class="Row">
                 <div id="Left"></div>  
                 <div id="Right"></div> 
