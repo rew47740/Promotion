@@ -22,10 +22,8 @@ body {
     width: 1200px;
     border-radius: 25px;
     background-image: linear-gradient(to top, #9ccbf5 0%, #bfdaf1 100%);
-    /* background-color: #9ccbf5; */
     margin: auto;
     padding-top: 10px;
-    /* opacity: 0.8; */
 }
 #pricemin:hover,#callmin:hover,#speedmin:hover,#netmin:hover{
     cursor: pointer;

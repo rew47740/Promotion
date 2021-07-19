@@ -224,6 +224,7 @@ body {
     color:rgb(255, 200, 97);
     font-weight:bolder;}
 #ais{
+    transition: 0.6s ease all;
 filter: drop-shadow(0px 0px 0 rgb(255, 255, 255)) 
 drop-shadow(2px 2px  rgb(73, 73, 73));
     display: table-cell;
@@ -231,6 +232,7 @@ drop-shadow(2px 2px  rgb(73, 73, 73));
     margin-left: 20px;
     margin-top:10px;}
 #dtac{
+    transition: 0.6s ease all;
     filter: drop-shadow(0px 0px 0 rgb(255, 255, 255)) 
 drop-shadow(2px 2px  rgb(75, 75, 75));
     display: table-cell;
@@ -244,7 +246,7 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     width: 20%;}
 #imgdtac{
     /* filter: grayscale(2);
-    filter: brightness(10000); */
+    filter: brightness(100000); */
     margin-left: 5%;
     width: 20%;}
 
@@ -337,25 +339,27 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     transition: 0.3s ease all;
     letter-spacing: 1px;
 }
-.itemleft:focus{
-    font-size: 18px;
+  .itemleft:focus{
+    transform: scale(1.1, 1.1);
+    font-size: 16px;
     position: fixed;
-    left: 2%;
-    top: 2.5%;
-    width: 44%;
-    height:90%;
+    left: 4%;
+    top: 7.5%;
+    width: 40%;
+    height:80%;
     z-index: 1;
     overflow: scroll;
     overflow-x: hidden;
     box-shadow: 1px 1px 20px;
 } 
 .itemright:focus{
-    font-size: 18px;
+    transform: scale(1.1, 1.1);
+    width: 40%;
+    height: 80%;
+    font-size: 16px;
     position: fixed;
-    right: 1.5%;
-    top: 2.5%;
-    width: 44%;
-    height:90%;
+    right: 3.5%;
+    top: 7.5%;
     z-index: 1;
     overflow: scroll;
     overflow-x: hidden;
@@ -448,6 +452,22 @@ cursor: pointer;}
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
+}
+.numleft{
+    position: absolute;
+    margin-left: 675px;
+    margin-top: 510px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+.numright{
+    position: absolute;
+    margin-left: 675px;
+    margin-top: 510px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
 }
 #fourg:hover,#fiveg:hover{animation: float 2s ease-in-out infinite;}
 @keyframes float {
