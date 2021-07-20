@@ -8,16 +8,18 @@ body {
     font-family: 'Prompt', sans-serif;
     min-height: 100%;
     overflow-x: hidden;
-    transition: 0.3s ease all;
+    transition: 0.6s ease all;
 }
 .main {
     min-height: 1500px;
     margin: auto;
-    position:relative;}
+    position:relative;
+    transition: 0.6s ease all;}
 .page{
     margin:auto;
     padding-top: 40px;
-    text-align:left;  }
+    text-align:left; 
+    transition: 0.6s ease all; }
 .Row {
         display: table;
         width: 100%; 
@@ -307,7 +309,7 @@ body {
     background-color:#d4e49a;
     color: black;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.9;
     height: 500px;
     overflow: hidden;
     transition: 0.3s ease all;
@@ -322,7 +324,7 @@ body {
     border-radius: 25px;
     color: black;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.9;
     height: 500px; 
     overflow: hidden;   
     transition: 0.3s ease all;
@@ -394,6 +396,7 @@ cursor: pointer;}
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
+    transition: 0.6s ease all;
 }
 .typesleft{
     text-align: center;
@@ -408,6 +411,7 @@ cursor: pointer;}
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
+    transition: 0.6s ease all;
 }
 .typeright{
     width: 45px;
@@ -423,6 +427,7 @@ cursor: pointer;}
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
+    transition: 0.6s ease all;
 }
 .typesright{
     text-align: center;
@@ -437,6 +442,7 @@ cursor: pointer;}
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
+    transition: 0.6s ease all;
 }
 #fourg:hover,#fiveg:hover{animation: float 2s ease-in-out infinite;}
 @keyframes float {
@@ -455,17 +461,25 @@ cursor: pointer;}
 }
 .numleft{
     position: absolute;
-    margin-left: 675px;
+    width: 45.5%;
+    text-align: right;
+    /* margin-left: 675px; */
     margin-top: 510px;
     font-size: 15px;
     font-weight: bolder;
     color: rgb(112, 158, 19);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
 }
 .numright{
     position: absolute;
-    margin-left: 675px;
+    width: 45.5%;
+    text-align: right;
+    /* margin-left: 675px; */
     margin-top: 510px;
     font-size: 15px;
     font-weight: bolder;
     color: rgb(26, 74, 161);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
 }
