@@ -229,14 +229,12 @@ body {
     transition: 0.6s ease all;
     display: table-cell;
     width: 12%;
-    margin-left: 20px;
     margin-top:10px;}
 #dtac{
     transition: 0.6s ease all;
     display: table-cell;
     width: 12%;
-    margin-top:10px;
-    background-image: "img/dtac.png";}
+    margin-top:10px;}
 #imgais{
     margin-left: 5%;
     width: 20%;}
@@ -306,7 +304,9 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
-    background-color:#d4e49a;
+    /* background-color:#d4e49a; */
+    background: rgb(212,228,154);
+    background: linear-gradient(126deg, rgba(212,228,154,1) 31%, rgba(255,255,255,1) 100%);
     color: black;
     font-size: 15px;
     line-height: 1.9;
@@ -318,7 +318,9 @@ body {
 
 .itemright{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    background-color: #92d9ff;   
+    /* background-color: #92d9ff;    */
+    background: rgb(146,217,255);
+    background: linear-gradient(126deg, rgba(146,217,255,1) 31%, rgba(255,255,255,1) 100%);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
