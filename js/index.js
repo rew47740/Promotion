@@ -1,5 +1,7 @@
 var audio = new Audio('img/sound.mp3');
 var beep = new Audio('img/beep.mp3');
+audio.volume=0;
+beep.volume=0;
 audio.loop=true;
 var priceinput ='';
 var callinput ='';

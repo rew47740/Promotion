@@ -1,5 +1,7 @@
 var audio = new Audio('img/sound.mp3');
 var beep = new Audio('img/beep.mp3');
+audio.volume=0;
+beep.volume=0;
 audio.loop=true;
 audio.volume=0.3;
 beep.volume=0.3;
@@ -72,18 +74,22 @@ document.addEventListener("keyup", function(event) {
      event.preventDefault();
      document.getElementById("ok").click();
     }});
-document.getElementById("play").onclick = function () {
-    if(x==0){
-        audio.currentTime = 1
-        audio.play();
-        x=1
-        play.style.filter="none";
-    }
-    else if(x==1){
-        audio.pause();
-        x=0
-        play.style.filter="grayscale(100%)";
-    }
+    document.getElementById("play").onclick = function () {
+        if(x==0){
+            audio.currentTime = 1
+            audio.play();
+            x=1
+            audio.volume=0.1;
+            beep.volume=0.1;
+            play.style.filter="none";
+        }
+        else if(x==1){
+            audio.pause();
+            audio.volume=0;
+        beep.volume=0;
+            x=0
+            play.style.filter="grayscale(100%)";
+        }
     }
 document.getElementById("play").addEventListener("click", mouseOver);
 document.getElementById("callunlim").addEventListener("mouseover", mouseOver);
