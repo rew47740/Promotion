@@ -311,7 +311,7 @@ body {
     background: rgb(212,228,154);
     background: linear-gradient(126deg, rgba(212,228,154,1) 31%, rgba(255,255,255,1) 100%);
     color: rgb(46, 73, 11);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.9;
     height: 500px;
     overflow: hidden;
@@ -328,7 +328,7 @@ body {
     margin-bottom: 20px;
     border-radius: 25px;
     color: rgb(13, 63, 92);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.9;
     height: 500px; 
     overflow: hidden;   
