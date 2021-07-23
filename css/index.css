@@ -5,7 +5,7 @@ body {
     background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
     background-size: 64px 64px;
     background-position: 0 0,32px 32px;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     height: 100vh;
     min-height: 100%;
     overflow: scroll;
@@ -29,7 +29,7 @@ body {
     cursor: pointer;
 }
 #callmin{
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     height: 30px;   
     font-size: 17px; 
     display: inline-block;
@@ -42,7 +42,7 @@ body {
 }
 #pricemin{
     margin-right: 30px;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     height: 30px;   
     font-size: 17px; 
     display: inline-block;
@@ -54,7 +54,7 @@ body {
 }
 #netmin{
     margin-right: 30px;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     height: 30px;   
     font-size: 17px; 
     display: inline-block;
@@ -66,7 +66,7 @@ body {
 }
 #speedmin{
     margin-right: 30px;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     height: 30px;   
     font-size: 17px; 
     display: inline-block;
@@ -102,7 +102,7 @@ body {
     left: 89%;
     bottom: 17%;
     background-color: #5c8fd3;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     font-size: 50px;
     width: 200px;
     height: 200px;
@@ -162,7 +162,7 @@ body {
     right: 22%;
     bottom: 23%;
     background-color: #88a4c7;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     width: 200px;
     height: 200px;
     border: none;
@@ -212,7 +212,7 @@ body {
     background-color: #647891;
 }
 #swap{
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Kodchasan', sans-serif;
     border:none;
     background-color: transparent;
     cursor: pointer;
