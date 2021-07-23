@@ -310,7 +310,7 @@ body {
     /* background-color:#d4e49a; */
     background: rgb(212,228,154);
     background: linear-gradient(126deg, rgba(212,228,154,1) 31%, rgba(255,255,255,1) 100%);
-    color: black;
+    color: rgb(46, 73, 11);
     font-size: 15px;
     line-height: 1.9;
     height: 500px;
@@ -327,7 +327,7 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
-    color: black;
+    color: rgb(13, 63, 92);
     font-size: 15px;
     line-height: 1.9;
     height: 500px; 
@@ -337,7 +337,7 @@ body {
 }
 
 .itemleft:focus{
-    opacity: 0.93;
+    opacity: 0.96;
     transform: scale(1.1, 1.1);
     font-size: 16px;
     position: fixed;
@@ -351,7 +351,7 @@ body {
     box-shadow: 1px 1px 20px;
 } 
 .itemright:focus{
-    opacity: 0.93;
+    opacity: 0.96;
     transform: scale(1.1, 1.1);
     width: 40%;
     height: 80%;
