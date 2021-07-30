@@ -47,7 +47,7 @@ body {
     font-size: 17px; 
     display: inline-block;
     width: 200px;
-    margin-left: 97px;
+    margin-left: 109px;
     border-radius: 15px;
     border: none;
     text-align-last:center;
@@ -100,7 +100,7 @@ body {
     font-size: 20px;
     position:relative;
     left: 89%;
-    bottom: 17%;
+    bottom: 10%;
     background-color: #5c8fd3;
     font-family: 'Kodchasan', sans-serif;
     font-size: 50px;
@@ -128,7 +128,7 @@ body {
     background-color: #0066ff;
     position:relative;
     left: 83%;
-    bottom: 34%;
+    bottom: 25%;
     transform:
       rotate(-20deg)
       perspective(800px)
