@@ -340,6 +340,7 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     transition: 0.3s ease all;
     letter-spacing: 1px;
 }
+@media only screen and (min-width: 1024px) {
   .itemleft:focus{
     opacity: 0.93;
     transform: scale(1.1, 1.1);
@@ -368,6 +369,7 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     overflow-x: hidden;
     box-shadow: 1px 1px 20px;
 } 
+}
 .itemleft:hover,.itemright:hover{
     overflow: scroll;
     overflow-x: hidden;
@@ -841,34 +843,7 @@ cursor: pointer;}
             letter-spacing: 1px;
     }
     
-    .itemleft:focus{
-        opacity: 0.96;
-        transform: scale(1.1, 1.1);
-        font-size: 16px;
-        position: fixed;
-        left: 4%;
-        top: 7.5%;
-        width: 40%;
-        height:80%;
-        z-index: 1;
-        overflow: scroll;
-        overflow-x: hidden;
-        box-shadow: 1px 1px 20px;
-    } 
-    .itemright:focus{
-        opacity: 0.96;
-        transform: scale(1.1, 1.1);
-        width: 40%;
-        height: 80%;
-        font-size: 16px;
-        position: fixed;
-        right: 3.5%;
-        top: 7.5%;
-        z-index: 1;
-        overflow: scroll;
-        overflow-x: hidden;
-        box-shadow: 1px 1px 20px;
-    } 
+    
     .itemleft:hover,.itemright:hover{
         overflow: scroll;
         overflow-x: hidden;
