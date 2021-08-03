@@ -845,7 +845,7 @@ cursor: pointer;}
     }
     
     .itemleft:focus{
-        
+        pointer-events: none;
         opacity: 0.96;
         transform: scale(1.1, 1.1);
         font-size: 16px;
@@ -860,6 +860,7 @@ cursor: pointer;}
         box-shadow: 1px 1px 20px;
     } 
     .itemright:focus{
+        pointer-events: none;
         opacity: 0.96;
         transform: scale(1.1, 1.1);
         width: 40%;
