@@ -664,6 +664,7 @@ cursor: pointer;}
         font-size: 12px;
         transition: 0.6s ease all;}
     #sortcall,#sortcapacity,#sortspeed{
+        height: 20px;
         background-color: transparent;
         font-family: 'Kodchasan', sans-serif;
         border: none;
