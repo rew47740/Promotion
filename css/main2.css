@@ -808,8 +808,8 @@ cursor: pointer;}
     .itemleft{
         -webkit-overflow-scrolling: touch;
         pointer-events: none;
-        overflow: scroll;
-        overflow-x: hidden;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         padding: 20px;
         margin-bottom: 20px;
@@ -827,8 +827,8 @@ cursor: pointer;}
     .itemright{
         -webkit-overflow-scrolling: touch;
         pointer-events: none;
-        overflow: scroll;
-        overflow-x: hidden;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         /* background-color: #92d9ff;    */
         padding: 20px;

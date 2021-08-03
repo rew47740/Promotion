@@ -807,10 +807,9 @@ cursor: pointer;}
     #home:hover{
         filter: opacity(0.5);}
     .itemleft{       
-         pointer-events: none;
+         /* pointer-events: none; */
+         overflow-y: scroll !important;
          -webkit-overflow-scrolling: touch;
-        overflow: scroll;
-        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         padding: 20px;
         margin-bottom: 20px;
@@ -827,10 +826,9 @@ cursor: pointer;}
     }
     
     .itemright{
-        pointer-events: none;
+        /* pointer-events: none; */
+        overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch;
-        overflow: scroll;
-        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         /* background-color: #92d9ff;    */
         background: rgb(146,217,255);
@@ -877,8 +875,8 @@ cursor: pointer;}
         box-shadow: 1px 1px 20px;
     } 
     .itemleft:hover,.itemright:hover{
-        overflow: scroll;
-        overflow-x: hidden;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
     cursor: pointer;}
     .itemleftno{    
         padding: 20px;
