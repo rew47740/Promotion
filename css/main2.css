@@ -807,7 +807,6 @@ cursor: pointer;}
         filter: opacity(0.5);}
     .itemleft{
         -webkit-overflow-scrolling: touch;
-        pointer-events: none;
         overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -826,7 +825,6 @@ cursor: pointer;}
     
     .itemright{
         -webkit-overflow-scrolling: touch;
-        pointer-events: none;
         overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -844,7 +842,6 @@ cursor: pointer;}
     }
     
     .itemleft:focus{
-        pointer-events: none;
         opacity: 0.96;
         transform: scale(1.1, 1.1);
         font-size: 16px;
@@ -859,7 +856,6 @@ cursor: pointer;}
         box-shadow: 1px 1px 20px;
     } 
     .itemright:focus{
-        pointer-events: none;
         opacity: 0.96;
         transform: scale(1.1, 1.1);
         width: 40%;
