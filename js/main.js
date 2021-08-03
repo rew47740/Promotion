@@ -12,6 +12,7 @@ if (callmax=="ไม่จำกัด"){callmax=9999}
 if (callmin=="ไม่จำกัด"){callmin=9999}
 if (speedmax=="Full Speed"){speedmax=9999}
 if (speedmin=="Full Speed"){speedmin=9999}
+document.getElementById("body").setAttribute("tabIndex", "0");
 fetch("json/Pronew.json")
 .then((response) => response.json())
 .then(function(dat){

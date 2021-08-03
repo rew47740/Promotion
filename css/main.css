@@ -10,6 +10,18 @@ body {
     overflow-x: hidden;
     transition: 0.6s ease all;
 }
+body:focus {
+    margin: 0px;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
+    background-size: 64px 64px;
+    background-position: 0 0,32px 32px;
+    font-family: 'Kodchasan', sans-serif;
+    min-height: 100%;
+    overflow-x: hidden;
+    transition: 0.6s ease all;
+}
 .main {
     min-height: 1500px;
     margin: auto;
@@ -795,6 +807,8 @@ cursor: pointer;}
     #home:hover{
         filter: opacity(0.5);}
     .itemleft{
+        overflow: scroll;
+        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         padding: 20px;
         margin-bottom: 20px;
@@ -812,6 +826,8 @@ cursor: pointer;}
     }
     
     .itemright{
+        overflow: scroll;
+        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         /* background-color: #92d9ff;    */
         background: rgb(146,217,255);
@@ -829,6 +845,7 @@ cursor: pointer;}
     }
     
     .itemleft:focus{
+        
         opacity: 0.96;
         transform: scale(1.1, 1.1);
         font-size: 16px;

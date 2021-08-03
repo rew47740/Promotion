@@ -806,6 +806,8 @@ cursor: pointer;}
     #home:hover{
         filter: opacity(0.5);}
     .itemleft{
+        overflow: scroll;
+        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         padding: 20px;
         margin-bottom: 20px;
@@ -822,6 +824,8 @@ cursor: pointer;}
     }
     
     .itemright{
+        overflow: scroll;
+        overflow-x: hidden;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         /* background-color: #92d9ff;    */
         padding: 20px;
