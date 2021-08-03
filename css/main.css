@@ -30,7 +30,7 @@ body {
     display: table-cell;
     padding-left: 33%;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 12px;
 }
 #totop {
     display: none;
@@ -568,10 +568,10 @@ cursor: pointer;}
     
     #btn1{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 20px;
-        width: 130px;
+        font-size: 15px;
+        width: 65px;
         height: 50px;
-        margin-right:20px;
+        margin-right:8px;
         background-color: transparent;
         background-repeat:no-repeat;
         border: none;
@@ -582,10 +582,10 @@ cursor: pointer;}
     }
     #btn2{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 20px;
-        width: 110px;
+        font-size: 15px;
+        width: 55px;
         height: 50px;
-        margin-right:20px;
+        margin-right:8px;
         background-color: Transparent;
         background-repeat:no-repeat;
         border: none;
@@ -595,10 +595,10 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn3{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 20px;
-        width: 170px;
+        font-size: 15px;
+        width: 85px;
         height: 50px;
-        margin-right:20px;
+        margin-right:8px;
         background-color: Transparent;
         background-repeat:no-repeat;
         border: none;
@@ -608,10 +608,10 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn4{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 20px;
-        width: 190px;
+        font-size: 15px;
+        width: 95px;
         height: 50px;
-        margin-right:20px;
+        margin-right:8px;
         background-color: Transparent;
         background-repeat:no-repeat;
         border: none;
@@ -622,9 +622,9 @@ cursor: pointer;}
     #btn5{    
         font-family: 'Kodchasan', sans-serif;
         font-size: 15px;
-        width: 30px;
+        width: 150px;
         height: 50px;
-        margin-right:20px;
+        margin-right:8px;
         background-color: Transparent;
         background-repeat:no-repeat;
         border: none;
@@ -744,7 +744,8 @@ cursor: pointer;}
         padding-left: 40px;
         max-width: 100%;
         min-width: 100%;
-        transition: 0.3s ease all;}
+        transition: 0.3s ease all;
+        min-height: 500px;}
     .bottom{
         transition: 0.3s ease all;
         color: rgb(255, 255, 255);
@@ -915,7 +916,7 @@ cursor: pointer;}
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
         margin-top: 20px;
-        right: 3%;
+        right: 4%;
         position:absolute;
         background-color: #e1f4ff;
         padding-top: 2px;
@@ -930,7 +931,7 @@ cursor: pointer;}
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
         margin-top: 20px;
-        right: 9%;
+        right: 8%;
         position:absolute;
         background-color: #e1f4ff;
         padding-top: 2px;
