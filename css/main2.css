@@ -806,6 +806,7 @@ cursor: pointer;}
     #home:hover{
         filter: opacity(0.5);}
     .itemleft{
+        -webkit-overflow-scrolling: touch;
         pointer-events: none;
         overflow: scroll;
         overflow-x: hidden;
@@ -824,6 +825,7 @@ cursor: pointer;}
     }
     
     .itemright{
+        -webkit-overflow-scrolling: touch;
         pointer-events: none;
         overflow: scroll;
         overflow-x: hidden;
@@ -933,7 +935,7 @@ cursor: pointer;}
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
         margin-top: 20px;
-        right: 4%;
+        right: 3%;
         position:absolute;
         background-color: #333333;
         color: white;
@@ -949,7 +951,7 @@ cursor: pointer;}
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
         margin-top: 20px;
-        right: 8%;
+        right: 7%;
         position:absolute;
         background-color: #333333;
         color: white;
