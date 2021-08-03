@@ -330,7 +330,7 @@ body {
         font-size: 20px;
         position:relative;
         left: 40%;
-        bottom: 10%;
+        bottom: 0%;
         background-color: #5c8fd3;
         font-family: 'Kodchasan', sans-serif;
         font-size: 50px;
@@ -357,13 +357,8 @@ body {
         font-size: 80px;
         background-color: #0066ff;
         position:relative;
-        left: 83%;
-        bottom: 25%;
         transform:
-          rotate(-20deg)
-          perspective(800px)
-          rotatey(0deg)
-          scale(0.9);
+          scale(1.1);
         filter: blur(0);
         opacity: 1;
     }
