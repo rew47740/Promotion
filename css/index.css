@@ -325,6 +325,7 @@ body {
         font-weight: bolder;
     }
     #ok{
+        margin-top: 200px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         text-shadow: 1px 1px 2px black;
         font-size: 20px;
@@ -358,7 +359,7 @@ body {
         background-color: #0066ff;
         position:relative;
         transform:
-          scale(1.1);
+          scale(1.2);
         filter: blur(0);
         opacity: 1;
     }
