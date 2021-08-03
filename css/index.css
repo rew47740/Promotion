@@ -344,9 +344,6 @@ body {
         display: inline-block;
         cursor: pointer;
         border-radius: 20px;
-        transform:
-        perspective(800px)
-        rotatey(20deg);
       opacity: 1;
       transition: 0.6s ease all;
     }
@@ -444,7 +441,7 @@ body {
         text-decoration: underline;
         position: absolute;
         text-align: center;
-        right: 50%;
+        right: 40%;
         bottom: 50px;
         font-size: 20px;
     }
