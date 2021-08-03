@@ -973,6 +973,36 @@ let itemCall = datasearch.map(value => { return value.โทรนอกเค�
 let itemSpeed= datasearch.map(value => { return value.ความเร็วเน็ตสูงสุด });
 let itemType= datasearch.map(value => { return value.Type});
 var list = document.getElementById('list');
+
+itemName = itemName.filter(function(item, index) {
+  if (itemName.indexOf(item) == index)
+    return item;
+});
+itemPrice = itemPrice.filter(function(item, index) {
+  if (itemPrice.indexOf(item) == index)
+    return item;
+});
+itemPrice2 = itemPrice2.filter(function(item, index) {
+  if (itemPrice2.indexOf(item) == index)
+    return item;
+});
+itemCapacity = itemCapacity.filter(function(item, index) {
+  if (itemCapacity.indexOf(item) == index)
+    return item;
+});
+itemCall = itemCall.filter(function(item, index) {
+  if (itemCall.indexOf(item) == index)
+    return item;
+});
+itemSpeed = itemSpeed.filter(function(item, index) {
+  if (itemSpeed.indexOf(item) == index)
+    return item;
+});
+itemType = itemType.filter(function(item, index) {
+  if (itemType.indexOf(item) == index)
+    return item;
+});
+
 itemName.forEach(function(item){
    var option = document.createElement('option');
    option.value = item;
@@ -983,6 +1013,7 @@ itemSpeed.forEach(function(item){
   option.value = item;
   list.appendChild(option);
 });
+
 itemCapacity.forEach(function(item){
   var option = document.createElement('option');
   option.value = item;

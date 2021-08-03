@@ -224,3 +224,232 @@ body {
 #swap:active{
     color: rgb(0, 42, 169);
 }
+
+@media only screen and (max-width: 1024px) {
+    body {
+        animation: expand 1.5s ease-in-out forwards;
+        background-color: #ffffff;
+        opacity: 1;
+        background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
+        background-size: 64px 64px;
+        background-position: 0 0,32px 32px;
+        font-family: 'Kodchasan', sans-serif;
+        height: 100vh;
+        min-height: 100%;
+        overflow: scroll;
+        
+    }
+    
+    .main {
+        padding: 50px;
+        margin: auto;
+    }
+    .page{
+        box-shadow: 0 11px 16px rgba(0, 0, 0, 0.12), 0 1px 14px rgba(0, 0, 0, 0.24);
+        height: 600px;
+        width: 1200px;
+        border-radius: 25px;
+        background-image: linear-gradient(to top, #000000 0%, #000000 100%);
+        margin: auto;
+        padding-top: 10px;
+    }
+    #pricemin:hover,#callmin:hover,#speedmin:hover,#netmin:hover{
+        cursor: pointer;
+    }
+    #callmin{
+        font-family: 'Kodchasan', sans-serif;
+        height: 30px;   
+        font-size: 17px; 
+        display: inline-block;
+        width: 200px;
+        margin-left: 18px;
+        margin-right: 30px;
+        border-radius: 15px;
+        border: none;
+        text-align-last:center;
+    }
+    #pricemin{
+        margin-right: 30px;
+        font-family: 'Kodchasan', sans-serif;
+        height: 30px;   
+        font-size: 17px; 
+        display: inline-block;
+        width: 200px;
+        margin-left: 109px;
+        border-radius: 15px;
+        border: none;
+        text-align-last:center;
+    }
+    #netmin{
+        margin-right: 30px;
+        font-family: 'Kodchasan', sans-serif;
+        height: 30px;   
+        font-size: 17px; 
+        display: inline-block;
+        width: 200px;
+        margin-left: 15px;
+        border-radius: 15px;
+        border: none;
+        text-align-last:center;
+    }
+    #speedmin{
+        margin-right: 30px;
+        font-family: 'Kodchasan', sans-serif;
+        height: 30px;   
+        font-size: 17px; 
+        display: inline-block;
+        width: 200px;
+        margin-left: 1px;
+        border-radius: 15px;
+        border: none;
+        text-align-last:center;
+    }
+    #to{
+        text-shadow: 1px 1px 2px black;
+        color: white;
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: bolder;
+    }
+    #to2{
+        text-shadow: 1px 1px 2px black;
+        color: white;
+        margin-left:30%;
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 20px;
+        font-weight: bolder;
+    }
+    #ok{
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        text-shadow: 1px 1px 2px black;
+        font-size: 20px;
+        position:relative;
+        left: 89%;
+        bottom: 10%;
+        background-color: #5c8fd3;
+        font-family: 'Kodchasan', sans-serif;
+        font-size: 50px;
+        width: 200px;
+        height: 200px;
+        border: none;
+        color: rgb(227, 244, 255);
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 100px;
+        transform:
+        perspective(800px)
+        rotatey(20deg);
+      opacity: 1;
+      transition: 0.6s ease all;
+    }
+    #ok:hover{
+        color: rgb(255, 255, 255);
+        border-radius: 200px;
+        height: 290px;
+        width: 290px;
+        font-size: 80px;
+        background-color: #0066ff;
+        position:relative;
+        left: 83%;
+        bottom: 25%;
+        transform:
+          rotate(-20deg)
+          perspective(800px)
+          rotatey(0deg)
+          scale(0.9);
+        filter: blur(0);
+        opacity: 1;
+    }
+    
+    #head{
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 2px black;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 50px;
+    }
+    #ot{
+        text-shadow: 1px 1px 2px black;
+        color: white;
+        margin-left: 25px;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #skip{
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        text-shadow: 1px 1px 2px black;
+        font-size: 40px;
+        position:relative;
+        right: 22%;
+        bottom: 23%;
+        background-color: #88a4c7;
+        font-family: 'Kodchasan', sans-serif;
+        width: 200px;
+        height: 200px;
+        border: none;
+        color: rgb(227, 244, 255);
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 100px;
+        transform:
+        perspective(800px)
+        rotatey(20deg);
+      opacity: 1;
+      transition: 0.6s ease all;
+    }
+    #skip:hover{
+        right: 24%;
+        bottom: 34%;
+        color: rgb(255, 255, 255);
+        border-radius: 200px;
+        height: 290px;
+        width: 290px;
+        font-size: 65px;
+        background-color: #6d85a1;
+        transform:
+          rotate(20deg)
+          perspective(800px)
+          rotatey(0deg)
+          scale(0.9);
+        filter: blur(0);
+        opacity: 1;
+    }
+    #play{
+        cursor: pointer;
+        position: fixed;
+        right: 1%;
+        top: 3%;
+        width: 20px;
+    }
+    #ok:hover ~ #skip{
+        right: 29.50%;
+    }
+    #ok:active{
+        background-color: rgb(1, 48, 136);
+    }
+    #skip:active{
+        background-color: #647891;
+    }
+    #swap{
+        font-family: 'Kodchasan', sans-serif;
+        border:none;
+        background-color: transparent;
+        cursor: pointer;
+        text-decoration: underline;
+        position: absolute;
+        right: 1px;
+        bottom: 5px;
+    }
+    #swap:active{
+        color: rgb(0, 42, 169);
+    }
+}
