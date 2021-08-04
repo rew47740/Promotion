@@ -689,6 +689,7 @@ cursor: pointer;}
         font-size: 12px;
         transition: 0.6s ease all;}
     #fiveg{
+        text-align: center;
             background-color: rgb(29, 29, 29);
             font-family: 'Kodchasan', sans-serif;
             border-radius: 25px;
@@ -702,6 +703,7 @@ cursor: pointer;}
             height: 40px;
             transition: 0.6s ease all;}
     #fourg{
+        text-align: center;
             background-color: rgb(29, 29, 29);
             font-family: 'Kodchasan', sans-serif;
             border-radius: 25px;
