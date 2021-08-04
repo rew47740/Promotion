@@ -532,7 +532,7 @@ cursor: pointer;}
         display: table-cell;
         padding-left: 33%;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 8px;
     }
     #totop {
         display: none;
@@ -580,7 +580,7 @@ cursor: pointer;}
     
     #btn1{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 130px;
         height: 50px;
         margin-right:8px;
@@ -594,7 +594,7 @@ cursor: pointer;}
     }
     #btn2{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 110px;
         height: 50px;
         margin-right:8px;
@@ -607,7 +607,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn3{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 190px;
         height: 50px;
         margin-right:8px;
@@ -620,7 +620,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn4{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 170px;
         height: 50px;
         margin-right:8px;
@@ -633,7 +633,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn5{    
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 150px;
         height: 50px;
         margin-right:8px;
@@ -646,19 +646,19 @@ cursor: pointer;}
         transition: 0.6s ease all;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
-            font-size: 18px;
-            width: 220px;
+            font-size: 22px;
+            width: 120px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
             text-decoration: underline;
-            font-size: 18px;
+            font-size: 22px;
             width: 100px;
             color:rgb(255, 235, 170);}
     #btn1:hover,#btn2:hover{
         text-decoration: underline;
-        font-size: 18px;
-        width: 140px;
+        font-size: 22px;
+        width: 100px;
         color:rgb(255, 235, 170);}
     #btn1:focus,#btn2:focus,#btn3:focus,#btn4:focus,#btn5:focus{
         color:rgb(255, 235, 170);
