@@ -646,18 +646,18 @@ cursor: pointer;}
         transition: 0.6s ease all;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
-            font-size: 30px;
+            font-size: 18px;
             width: 220px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
             text-decoration: underline;
-            font-size: 30px;
+            font-size: 18px;
             width: 100px;
             color:rgb(255, 235, 170);}
     #btn1:hover,#btn2:hover{
         text-decoration: underline;
-        font-size: 30px;
+        font-size: 18px;
         width: 140px;
         color:rgb(255, 235, 170);}
     #btn1:focus,#btn2:focus,#btn3:focus,#btn4:focus,#btn5:focus{
@@ -880,6 +880,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
+        z-index: -1;
     }
     .typesleft{
         text-align: center;
@@ -895,6 +896,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
+        z-index: -1;
     }
     .typeright{
         width: 35px;
@@ -911,6 +913,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
+        z-index: -1;
     }
     .typesright{
         text-align: center;
@@ -926,6 +929,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
+        z-index: -1;
     }
     #fourg:hover,#fiveg:hover{animation: float 2s ease-in-out infinite;}
     @keyframes float {
