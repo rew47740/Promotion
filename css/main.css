@@ -654,7 +654,7 @@ cursor: pointer;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
             font-size: 22px;
-            width: 180px;
+            width: 200px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
