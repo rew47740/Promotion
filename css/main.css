@@ -528,12 +528,17 @@ cursor: pointer;}
             table-layout: fixed; 
             border-spacing: 10px; 
         }
-    #cl,#cr{
+    #cl{
         display: table-cell;
         padding-left: 25%;
         font-weight: bold;
         font-size: 8px;
     }
+    #cr{
+        display: table-cell;
+        padding-left: 30%;
+        font-weight: bold;
+        font-size: 8px;}
     #totop {
         display: none;
         position: fixed;
@@ -558,10 +563,11 @@ cursor: pointer;}
         border-radius: 25px;
         color: black;
         font-size: 15px;
-        padding-left: 50px;
+        padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
         margin: 15px;
+        margin-left: 10px;
         margin-top: 15px;
         line-height: 1.6;
     }
