@@ -866,6 +866,8 @@ cursor: pointer;}
         line-height: 1.6;
         height: 60px; }
     .typeleft{
+        overflow-x: scroll !important;
+        -webkit-overflow-scrolling: touch;
         width: 35px;
         text-align: center;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -883,6 +885,8 @@ cursor: pointer;}
         z-index: -1;
     }
     .typesleft{
+        overflow-x: scroll !important;
+        -webkit-overflow-scrolling: touch;
         text-align: center;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
