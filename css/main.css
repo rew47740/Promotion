@@ -530,7 +530,7 @@ cursor: pointer;}
         }
     #cl,#cr{
         display: table-cell;
-        padding-left: 30%;
+        padding-left: 25%;
         font-weight: bold;
         font-size: 8px;
     }
@@ -647,7 +647,7 @@ cursor: pointer;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
             font-size: 22px;
-            width: 150px;
+            width: 180px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
@@ -882,7 +882,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
-        z-index: -1;
+        z-index: 99;
     }
     .typesleft{
         overflow-x: scroll !important;
@@ -900,7 +900,7 @@ cursor: pointer;}
         padding-right: 5px;
         font-weight: bold;
         transition: 0.6s ease all;
-        z-index: -1;
+        z-index: 99;
     }
     .typeright{
         width: 35px;
