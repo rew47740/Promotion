@@ -537,7 +537,7 @@ cursor: pointer;}
         }
         #cr{
             display: table-cell;
-            padding-left: 30%;
+            padding-left: 25%;
             font-weight: bold;
             font-size: 8px;}
     #totop {
@@ -564,7 +564,7 @@ cursor: pointer;}
         border-radius: 25px;
         color: black;
         font-size: 15px;
-        padding-left: 20px;
+        padding-left: 25px;
         padding-right: 20px;
         padding-bottom: 20px;
         margin: 15px;
@@ -573,6 +573,7 @@ cursor: pointer;}
         line-height: 1.6;
     }
     #Left{
+        margin-right: 13px;
         display: table-cell;
         border-radius: 25px;
         color: black;
