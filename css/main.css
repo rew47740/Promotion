@@ -530,7 +530,7 @@ cursor: pointer;}
         }
     #cl,#cr{
         display: table-cell;
-        padding-left: 33%;
+        padding-left: 30%;
         font-weight: bold;
         font-size: 8px;
     }
@@ -647,18 +647,18 @@ cursor: pointer;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
             font-size: 22px;
-            width: 120px;
+            width: 150px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
             text-decoration: underline;
             font-size: 22px;
-            width: 100px;
+            width: 150px;
             color:rgb(255, 235, 170);}
     #btn1:hover,#btn2:hover{
         text-decoration: underline;
         font-size: 22px;
-        width: 100px;
+        width: 150px;
         color:rgb(255, 235, 170);}
     #btn1:focus,#btn2:focus,#btn3:focus,#btn4:focus,#btn5:focus{
         color:rgb(255, 235, 170);
@@ -845,7 +845,7 @@ cursor: pointer;}
     .itemleft:hover,.itemright:hover{
         overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch;
-    cursor: pointer;}
+        cursor: pointer;}
     .itemleftno{    
         padding: 20px;
         margin-bottom: 20px;

@@ -531,7 +531,7 @@ cursor: pointer;}
         }
     #cl,#cr{
         display: table-cell;
-        padding-left: 33%;
+        padding-left: 30%;
         font-weight: bold;
         font-size: 8px;
     }
@@ -581,7 +581,7 @@ cursor: pointer;}
     
     #btn1{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 130px;
         height: 50px;
         margin-right:8px;
@@ -595,7 +595,7 @@ cursor: pointer;}
     }
     #btn2{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 110px;
         height: 50px;
         margin-right:8px;
@@ -608,7 +608,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn3{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 190px;
         height: 50px;
         margin-right:8px;
@@ -621,7 +621,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn4{
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 170px;
         height: 50px;
         margin-right:8px;
@@ -634,7 +634,7 @@ cursor: pointer;}
         transition: 0.6s ease all;}
     #btn5{    
         font-family: 'Kodchasan', sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         width: 150px;
         height: 50px;
         margin-right:8px;
@@ -647,19 +647,19 @@ cursor: pointer;}
         transition: 0.6s ease all;}
         #btn3:hover,#btn4:hover{
             text-decoration: underline;
-            font-size: 18px;
-            width: 220px;
+            font-size: 22px;
+            width: 150px;
             color:rgb(255, 235, 170);
         }
         #btn5:hover{
             text-decoration: underline;
-            font-size: 18px;
-            width: 100px;
+            font-size: 22px;
+            width: 150px;
             color:rgb(255, 235, 170);}
     #btn1:hover,#btn2:hover{
         text-decoration: underline;
-        font-size: 18px;
-        width: 140px;
+        font-size: 22px;
+        width: 150px;
         color:rgb(255, 235, 170);}
     #btn1:focus,#btn2:focus,#btn3:focus,#btn4:focus,#btn5:focus{
         color:rgb(255, 235, 170);
@@ -810,7 +810,6 @@ cursor: pointer;}
     .itemleft{
         -webkit-overflow-scrolling: touch;
         overflow-y: scroll !important;
-        -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         padding: 20px;
         margin-bottom: 20px;
@@ -828,7 +827,6 @@ cursor: pointer;}
     .itemright{
         -webkit-overflow-scrolling: touch;
         overflow-y: scroll !important;
-        -webkit-overflow-scrolling: touch;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         /* background-color: #92d9ff;    */
         padding: 20px;
@@ -845,9 +843,9 @@ cursor: pointer;}
     
     
     .itemleft:hover,.itemright:hover{
-        overflow: scroll;
-        overflow-x: hidden;
-    cursor: pointer;}
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
+        cursor: pointer;}
     .itemleftno{    
         padding: 20px;
         margin-bottom: 20px;
@@ -868,6 +866,8 @@ cursor: pointer;}
         line-height: 1.6;
         height: 60px; }
     .typeleft{
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll !important;
         width: 35px;
         text-align: center;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -886,6 +886,8 @@ cursor: pointer;}
         z-index: -1;
     }
     .typesleft{
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll !important;
         text-align: center;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 25px;
