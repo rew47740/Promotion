@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <script>      
+    </script>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
+        <link id="pagestyle" rel="stylesheet" href="css/mobile.css">
+        <script>
+            var x =0;
+            // function swapStyleSheet(sheet){
+            //     if(x==0){
+            //     document.getElementById('pagestyle').setAttribute('href', "css/mobile2.css");
+            //     x=1;
+            //     }
+            //     else{
+            //         document.getElementById('pagestyle').setAttribute('href', "css/mobile.css");
+            //         x=0;
+            //     }
+            // }
+            </script>
+        <style>
+    ::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 25px;
+}
+
+    ::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+    border-radius: 25px;
+}
+
+    ::-webkit-scrollbar-thumb
+{
+	background-color: rgb(85, 85, 85);
+	border: 2px solid #555555;
+    border-radius: 25px;
+}
+            </style>
+    </head>
+    <body>
+        <button id="totop" title="Go to top">Top ↑</button>
+        <!-- <img src="img/moon.png" id ="change" onclick="swapStyleSheet('css/mobile2.css')"> -->
+        <img src="img/home.png" id="home" >
+        <header class="top">
+            <div class="page">
+                <button id="btn1">รายเดือน</button>
+                <button id="btn2">เติมเงิน</button>
+                <button id="btn3">แพ็กเกจเสริม</button>
+                <button id="btn4">โปรโมชั่นมือถือ</button>
+                <button id="btn5">อินเทอร์เน็ต</button>
+                <button id="btn6">เครื่องมือถือ(True)</button>
+            </div>
+            <button id=sortprice>เรียงตามราคา</button>
+            <!-- <button id=sortcall>เรียงตามปริมาณโทร</button>
+            <button id=sortcapacity>เรียงตามปริมาณเน็ต</button>
+            <button id=sortspeed>เรียงตามความเร็วเน็ต</button> -->
+            <div class = search>                
+                <input id="input" list = "list" type="text"placeholder="ค้นหา...">
+                <datalist id="list"></datalist>  
+                <button id="enter">ค้นหา</button>
+            </div>  
+        </header>
+        <div class="main">
+            <div class="Row">
+                <div id="true"><img src="img/true.png" id="imgtrue"  ></div>   
+            </div>
+            <div class="Row">
+                <div id="cl">ผลลัพธ์ทั้งหมด 0 รายการ</div>  
+            </div>
+            <div class="Row">
+                <div id="Left"></div>  
+            </div>
+  
+            <script src="js/mobile.js"></script>
+        </div>
+        <footer class="bottom">
+            <p>About this website</p>
+            <p>Copyright 2030</p>
+        </footer>
+    </body>
+</html>

@@ -937,6 +937,7 @@ let change = document.getElementById('change');
 change.addEventListener('click',toggle);
 var check =0;
 document.getElementById("home").onclick = function () {location.href = "index.html"};
+document.getElementById("btn6").onclick = function () {location.href = "mobile.html"};
 press1.addEventListener('click',showdata1);
 press2.addEventListener('click',showdata2);
 press3.addEventListener('click',showdata3);
