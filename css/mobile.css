@@ -40,7 +40,7 @@ body:focus {
     }
 #cl{
     display: table-cell;
-    padding-left: 54%;
+    padding-left: 83%;
     font-weight: bold;
     font-size: 17px;
 }
@@ -80,7 +80,7 @@ body:focus {
     border-radius: 25px;
     color: black;
     font-size: 15px;
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 0px;
     padding-bottom: 20px;
     margin: 15px;
@@ -199,7 +199,7 @@ body:focus {
     outline: none;
     color: rgb(206, 206, 206);;
     margin-right: 25px;
-    margin-top: 35px;
+    margin-top: 70px;
     margin-left: 5px;
     font-size: 12px;
     transition: 0.6s ease all;}
@@ -243,7 +243,8 @@ body:focus {
     transition: 0.6s ease all;
     display: table-cell;
     width: 10%;
-    margin-top:10px;}
+    margin-top:10px;
+}
 #imgtrue{
     margin-left: 1%;
     width: 15%;}
@@ -252,9 +253,9 @@ body:focus {
     border-radius: 25px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     margin-top: 45px;
-        float: right;
+        float: left;
         width: 30%;
-        margin-right: 6px;
+        margin-right:1.5% ;
     }
     .img:hover {
         transform: scale(1.5); /* (150% zoom)*/
@@ -266,7 +267,7 @@ body:focus {
         margin-top: 25px;
         float: right;
         width: 28%;
-        margin-right: 20px;
+        margin-right: 2%;
 }
 
 .top {
@@ -300,7 +301,7 @@ body:focus {
     text-align: right;
     margin-top: 20px;
     display: inline-block;
-    margin-left:70%;}
+    margin-left:75%;}
 #sortcall:active,#sortprice:active,#sortcapacity:active,#sortspeed:active{
     color:rgb(255, 200, 97);
     font-weight:bolder;}
@@ -332,10 +333,10 @@ body:focus {
     font-weight: bolder;
 }
 .itemleft{
-    width:65%;
+    width:64%;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     border-radius: 25px;
     background: linear-gradient(126deg, rgb(235, 192, 192) 31%, rgba(255,255,255,1) 100%);
     color: rgb(63, 21, 21);
@@ -345,7 +346,8 @@ body:focus {
     overflow: hidden;
     transition: 0.3s ease all;
     letter-spacing: 1px;
-    float: left;
+    float: right;
+    margin-right: 15px;
 }
 
 .itemleft:hover{

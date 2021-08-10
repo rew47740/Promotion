@@ -82,9 +82,6 @@ countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รา
 function search(){
   cleft=0;
     sortprice.innerHTML="เรียงตามราคา"
-    sortcapacity.innerHTML="เรียงตามปริมาณเน็ต"
-    sortcall.innerHTML="เรียงตามปริมาณโทร"
-    sortspeed.innerHTML="เรียงตามความเร็วเน็ต"
     var input = document.getElementById('input').value;
     showleft.innerHTML='';
     if(input==''){
