@@ -39,6 +39,8 @@ body:focus {
         border-spacing: 10px; 
     }
 #cl{
+    margin-bottom: 0px;
+    margin-top: 0px;
     display: table-cell;
     padding-left: 83%;
     font-weight: bold;
@@ -235,6 +237,7 @@ body:focus {
     margin-top:10px;
 }
 #imgtrue{
+    margin-bottom: 0px;
     margin-left: 1%;
     width: 15%;}
 #img{
