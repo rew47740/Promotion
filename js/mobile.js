@@ -77,7 +77,7 @@ for (i = 0;i<dataleft.length;i++){
     }
   }
 if(dataleft.length==0){
-  showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+  showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
 }
 countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
 function search(){
@@ -210,7 +210,7 @@ function search(){
       }
     }
     if(resultleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return resultleft;
@@ -459,7 +459,7 @@ itemName.forEach(function(item){
         sortp=0;
     }
     if(resultleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
 }  
@@ -556,7 +556,7 @@ for (i = 0;i<dataleft.length;i++){
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
   }
   if(dataleft.length==0){
-    showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+    showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
   }
   countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
   return dataleft;  
@@ -629,7 +629,7 @@ function filtero(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -702,7 +702,7 @@ function filterr(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;    
@@ -775,7 +775,7 @@ function filters(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -848,7 +848,7 @@ function filterv(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -921,7 +921,7 @@ function filterx(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -994,7 +994,7 @@ function filterall(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -1069,7 +1069,7 @@ function filterl(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;    
@@ -1140,7 +1140,7 @@ function filterh(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  
@@ -1211,7 +1211,7 @@ function filterall2(){
       countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     }
     if(dataleft.length==0){
-      showleft.innerHTML='<div class="itemleftno">'+"ไม่พบข้อมูล"+'</div>';
+      showleft.innerHTML='<div class="itemleftno">'+"<b>ไม่พบข้อมูล</b>"+'</div>';
     }
     countleft.innerHTML="ผลลัพธ์ทั้งหมด "+cleft+" รายการ"
     return dataleft;  

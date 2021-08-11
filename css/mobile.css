@@ -352,7 +352,7 @@ body:focus {
     color: rgb(63, 21, 21);
     font-size: 16px;
     line-height: 2.1;
-    height: 100px;
+    height: 200px;
     overflow: hidden;
     transition: 0.3s ease all;
     letter-spacing: 1px;
@@ -580,7 +580,9 @@ body:focus {
     display: inline-block;
   }
   
-  .dropdown-content,.dropdown-content2 {
+  .dropdown-content {
+    width:180px;
+    margin-left: 20px;
     margin-top: 10px;
     display: none;
     position: absolute;
@@ -590,6 +592,17 @@ body:focus {
     z-index: 1;
     border-radius: 25px;
   }
+  .dropdown-content2 {
+    margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 25px;
+}
   
   
   .dropdown-content a:hover,.dropdown-content2 a:hover {
@@ -603,7 +616,10 @@ body:focus {
     font-weight: bolder;
     font-family: 'Kodchasan', sans-serif;
     background: transparent;
-    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgb(209, 209, 209);
     display: block;
     font-size: 15px;
     padding: 10px;

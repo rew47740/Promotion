@@ -158,6 +158,7 @@ document.getElementById("play").onclick = function () {
 document.getElementById("play").addEventListener("click", mouseOver);
 document.getElementById("swap").addEventListener("click", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
+document.getElementById("mobile").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;
   beep.play();

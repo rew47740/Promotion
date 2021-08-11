@@ -98,6 +98,7 @@ document.getElementById("netunlim").addEventListener("mouseover", mouseOver);
 document.getElementById("speedunlim").addEventListener("mouseover", mouseOver);
 document.getElementById("swap").addEventListener("click", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
+document.getElementById("mobile").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;
   beep.play();
