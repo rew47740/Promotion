@@ -10,17 +10,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
         <link id="pagestyle" rel="stylesheet" href="css/mobile.css">
         <script>
-            var x =0;
-            // function swapStyleSheet(sheet){
-            //     if(x==0){
-            //     document.getElementById('pagestyle').setAttribute('href', "css/mobile2.css");
-            //     x=1;
-            //     }
-            //     else{
-            //         document.getElementById('pagestyle').setAttribute('href', "css/mobile.css");
-            //         x=0;
-            //     }
-            // }
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')&&!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns2.length; i++) {
+      var openDropdown2 = dropdowns2[i];
+      if (openDropdown2.classList.contains('show2')) {
+        openDropdown2.classList.remove('show2');
+      }
+    }
+  }
+}
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn2')) {
+//     var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+//     var i;
+//     for (i = 0; i < dropdowns2.length; i++) {
+//       var openDropdown2 = dropdowns2[i];
+//       if (openDropdown2.classList.contains('show2')) {
+//         openDropdown2.classList.remove('show2');
+//       }
+//     }
+//   }
+// }
             </script>
         <style>
     ::-webkit-scrollbar-track
@@ -58,10 +85,27 @@
                 <button id="btn5">อินเทอร์เน็ต</button>
                 <button id="btn6">เครื่องมือถือ(True)</button>
             </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" id ="drop">แบรนด์มือถือ ▾</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <button id = "a">Apple</a>
+                  <button id = "o">Oppo</a>
+                  <button id = "r">Realme</a>
+                  <button id = "s">Samsung</a>
+                  <button id = "v">Vivo</a>
+                  <button id = "x">Xiaomi</a>
+                  <button id = "all">ทั้งหมด</a>
+                </div>
+              </div>
+              <div class="dropdown2">
+                <button onclick="myFunction2()" class="dropbtn2"id ="drop2">ช่วงราคา ▾</button>
+                <div id="myDropdown2" class="dropdown-content2">
+                  <button id = "l">0-9,999 บาท</a>
+                  <button id = "h">10,000 บาทขึ้นไป</a>
+                  <button id = "all2">ทั้งหมด</a>
+                </div>
+              </div>
             <button id=sortprice>เรียงตามราคา</button>
-            <!-- <button id=sortcall>เรียงตามปริมาณโทร</button>
-            <button id=sortcapacity>เรียงตามปริมาณเน็ต</button>
-            <button id=sortspeed>เรียงตามความเร็วเน็ต</button> -->
             <div class = search>                
                 <input id="input" list = "list" type="text"placeholder="ค้นหา...">
                 <datalist id="list"></datalist>  

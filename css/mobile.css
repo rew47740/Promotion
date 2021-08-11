@@ -201,20 +201,9 @@ body:focus {
     margin-right: 25px;
     margin-top: 70px;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 15px;
     transition: 0.6s ease all;}
-#sortcall,#sortcapacity,#sortspeed{
-    height: 10px;
-    background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
-    border: none;
-    cursor:pointer;
-    outline: none;
-    color: rgb(206, 206, 206);
-    margin-right: 25px;
-    margin-top: 35px;
-    font-size: 12px;
-    transition: 0.6s ease all;}
+
 #fiveg{
         background-color: rgb(29, 29, 29);
         font-family: 'Kodchasan', sans-serif;
@@ -230,12 +219,12 @@ body:focus {
         transition: 0.6s ease all;}
 
 
-#sortcall:hover,#sortprice:hover,#sortcapacity:hover,#sortspeed:hover{
-    font-size: 13px;
+#sortprice:hover{
+    font-size: 18px;
     height: 10px;
     color:rgb(255, 200, 97);
     text-decoration: underline;}
-#sortcall:focus,#sortprice:focus,#sortcapacity:focus,#sortspeed:focus{
+#sortprice:focus{
     color:rgb(255, 200, 97);
     font-weight:bolder;}
 #true{
@@ -301,7 +290,7 @@ body:focus {
     text-align: right;
     margin-top: 20px;
     display: inline-block;
-    margin-left:75%;}
+    margin-left:83%;}
 #sortcall:active,#sortprice:active,#sortcapacity:active,#sortspeed:active{
     color:rgb(255, 200, 97);
     font-weight:bolder;}
@@ -342,7 +331,7 @@ body:focus {
     color: rgb(63, 21, 21);
     font-size: 16px;
     line-height: 2.1;
-    height: 500px;
+    height: 550px;
     overflow: hidden;
     transition: 0.3s ease all;
     letter-spacing: 1px;
@@ -350,20 +339,25 @@ body:focus {
     margin-right: 15px;
 }
 
-.itemleft:hover{
+/* .itemleft:hover{
     overflow: scroll;
-    overflow-x: hidden;}
+    overflow-x: hidden;} */
 .itemleftno{    
+    width:96%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     border-radius: 25px;
-    background: rgb(204, 140, 140);
     background: linear-gradient(126deg, rgb(235, 192, 192) 31%, rgba(255,255,255,1) 100%);
     color: rgb(63, 21, 21);
-    font-size: 15px;
-    line-height: 1.6;
-    height: 60px;
-    overflow: hidden;}
+    font-size: 16px;
+    line-height: 2.1;
+    height: 100px;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    letter-spacing: 1px;
+    float: right;
+    margin-right: 15px;}
 
 
 @keyframes float {
@@ -504,7 +498,7 @@ body:focus {
         border: 6px solid rgb(212, 186, 186);
         border-radius: 25px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-        margin-top: 45px;
+        margin-top: 48px;
             float: left;
             width: 26%;
             margin-right:1.5% ;
@@ -535,4 +529,90 @@ body:focus {
         float: right;
         margin-right: 15px;
     }
+}
+
+
+
+
+
+.dropbtn {
+    height: 10px;
+    background-color: transparent;
+    font-family: 'Kodchasan', sans-serif;
+    border: none;
+    cursor:pointer;
+    outline: none;
+    color: rgb(206, 206, 206);
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 25px;
+    transition: 0.6s ease all;
+  }
+  .dropbtn2 {
+    height: 10px;
+    background-color: transparent;
+    font-family: 'Kodchasan', sans-serif;
+    border: none;
+    cursor:pointer;
+    outline: none;
+    color: rgb(206, 206, 206);
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 25px;
+    transition: 0.6s ease all;
+  }
+  .dropbtn:hover{
+    font-size: 30px;
+    height: 10px;
+    color:rgb(255, 200, 97);
+    text-decoration: underline;
+  }
+  .dropbtn2:hover{
+    font-size: 30px;
+    height: 10px;
+    color:rgb(255, 200, 97);
+    text-decoration: underline;
+  }
+  .dropdown,.dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content,.dropdown-content2 {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px;
+  }
+  
+  
+  .dropdown-content a:hover,.dropdown-content2 a:hover {
+      background-color: #ddd;
+    }
+  
+.show {display:block;}
+.show2 {display:block;}
+
+#a,#o,#r,#s,#v,#s,#x,#h,#l,#all,#all2{
+    font-weight: bolder;
+    font-family: 'Kodchasan', sans-serif;
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 25px;
+}
+#a:hover,#o:hover,#r:hover,#s:hover,#v:hover,#s:hover,#x:hover,#h:hover,#l:hover,#all:hover,#all2:hover{
+background: #ddd;
+cursor: pointer;
+border-radius: 25px;
 }

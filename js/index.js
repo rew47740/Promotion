@@ -125,6 +125,9 @@ var netmax=9999;
 document.getElementById("swap").onclick = function () {
     location.href = "index2.html";
 };
+document.getElementById("mobile").onclick = function () {
+    location.href = "mobile.html";
+};
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
      event.preventDefault();

@@ -55,6 +55,9 @@ document.getElementById("ok").onclick = function () {
 document.getElementById("swap").onclick = function () {
     location.href = "index.html";
 };
+document.getElementById("mobile").onclick = function () {
+    location.href = "mobile.html";
+};
 document.getElementById("callunlim").onclick = function () {
     callmax.value="ไม่จำกัด";
     callmin.value="ไม่จำกัด";
