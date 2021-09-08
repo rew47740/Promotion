@@ -5,15 +5,85 @@ dataleft=data;
 datasearch = data;
 resultleft=dataleft;
 datafil=dataleft;
+var b1=0
+var b2=0
+var b3=0
+var b4=0
+var b5=0
+var b=0
 var sortp=0;
 showleft = document.getElementById("Left");
 showright = document.getElementById("Right");
 countleft = document.getElementById("cl");
-document.getElementById("btn1").onclick = function () {location.href = "main.html"};
-document.getElementById("btn2").onclick = function () {location.href = "main.html"};
-document.getElementById("btn3").onclick = function () {location.href = "main.html"};
-document.getElementById("btn4").onclick = function () {location.href = "main.html"};
-document.getElementById("btn5").onclick = function () {location.href = "main.html"};
+document.getElementById("btn1").onclick = function () {    
+  b=0
+  b1=1;
+  b2=0;
+  b3=0;
+  b4=0;
+  b5=0;
+  sessionStorage.setItem("b", b);
+  sessionStorage.setItem("b1", b1);
+  sessionStorage.setItem("b2", b2);
+  sessionStorage.setItem("b3", b3);
+  sessionStorage.setItem("b4", b4);
+  sessionStorage.setItem("b5", b5);
+location.href = "main.html"}
+document.getElementById("btn2").onclick = function () {    
+  b=0
+  b1=0;
+  b2=1;
+  b3=0;
+  b4=0;
+  b5=0;
+  sessionStorage.setItem("b", b);
+  sessionStorage.setItem("b1", b1);
+  sessionStorage.setItem("b2", b2);
+  sessionStorage.setItem("b3", b3);
+  sessionStorage.setItem("b4", b4);
+  sessionStorage.setItem("b5", b5);
+  location.href = "main.html"}
+document.getElementById("btn3").onclick = function () {    
+  b=0
+  b1=0;
+  b2=0;
+  b3=1;
+  b4=0;
+  b5=0;
+  sessionStorage.setItem("b", b);
+  sessionStorage.setItem("b1", b1);
+  sessionStorage.setItem("b2", b2);
+  sessionStorage.setItem("b3", b3);
+  sessionStorage.setItem("b4", b4);
+  sessionStorage.setItem("b5", b5);
+  location.href = "main.html"}
+  document.getElementById("btn4").onclick = function () {  
+  b=0
+  b1=0;
+  b2=0;
+  b3=0;
+  b4=1;
+  b5=0;
+  sessionStorage.setItem("b", b);
+  sessionStorage.setItem("b1", b1);
+  sessionStorage.setItem("b2", b2);
+  sessionStorage.setItem("b3", b3);
+  sessionStorage.setItem("b4", b4);
+  sessionStorage.setItem("b5", b5);
+  location.href = "main.html"}
+document.getElementById("btn5").onclick = function () {    
+  b1=0;
+  b2=0;
+  b3=0;
+  b4=0;
+  b5=1;
+  sessionStorage.setItem("b", b);
+  sessionStorage.setItem("b1", b1);
+  sessionStorage.setItem("b2", b2);
+  sessionStorage.setItem("b3", b3);
+  sessionStorage.setItem("b4", b4);
+  sessionStorage.setItem("b5", b5);
+  location.href = "main.html"}
 document.getElementById("home").onclick = function () {location.href = "index.html"};
 enter.addEventListener('click',search);
 sortprice.addEventListener('click',price);

@@ -8,6 +8,7 @@ var callinput ='';
 var netinput ='';
 var speedinput ='';
 var x = 0;
+var b = 0;
 var play = document.getElementById("play");
 play.style.filter="grayscale(100%)";
 document.getElementById("ok").onclick = function () {   
@@ -112,6 +113,7 @@ var netmax=9999;
         speedmin = 9999
         speedmax = 9999
     }
+    b=1;
     location.href = "main.html";
     sessionStorage.setItem("pricemin", pricemin);
     sessionStorage.setItem("pricemax", pricemax);
@@ -121,13 +123,14 @@ var netmax=9999;
     sessionStorage.setItem("netmax", netmax);
     sessionStorage.setItem("speedmin", speedmin);
     sessionStorage.setItem("speedmax", speedmax);
+    sessionStorage.setItem("b", b);
 };
 document.getElementById("swap").onclick = function () {
     location.href = "index2.html";
 };
-document.getElementById("mobile").onclick = function () {
-    location.href = "mobile.html";
-};
+// document.getElementById("mobile").onclick = function () {
+//     location.href = "mobile.html";
+// };
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
      event.preventDefault();
@@ -158,7 +161,7 @@ document.getElementById("play").onclick = function () {
 document.getElementById("play").addEventListener("click", mouseOver);
 document.getElementById("swap").addEventListener("click", mouseOver);
 document.getElementById("ok").addEventListener("mouseover", mouseOver);
-document.getElementById("mobile").addEventListener("mouseover", mouseOver);
+// document.getElementById("mobile").addEventListener("mouseover", mouseOver);
 function mouseOver(){
     beep.currentTime=0;
   beep.play();

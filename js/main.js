@@ -6,6 +6,26 @@ var netmax = sessionStorage.getItem("netmax");
 var netmin = sessionStorage.getItem("netmin");
 var speedmax = sessionStorage.getItem("speedmax");
 var speedmin = sessionStorage.getItem("speedmin");
+var b1 = sessionStorage.getItem("b1");
+var b2 = sessionStorage.getItem("b2");
+var b3 = sessionStorage.getItem("b3");
+var b4 = sessionStorage.getItem("b4");
+var b5 = sessionStorage.getItem("b5");
+var b = sessionStorage.getItem("b");
+console.log(b)
+if (b==1){
+  b1=0;
+  b2=0;
+  b3=0;
+  b4=0;
+  b5=0;
+  b=0;
+}
+console.log(b1)
+console.log(b2)
+console.log(b3)
+console.log(b4)
+console.log(b5)
 if (netmax=="ไม่จำกัด"){netmax=9999}
 if (netmin=="ไม่จำกัด"){netmin=9999}
 if (callmax=="ไม่จำกัด"){callmax=9999}
@@ -938,6 +958,27 @@ change.addEventListener('click',toggle);
 var check =0;
 document.getElementById("home").onclick = function () {location.href = "index.html"};
 document.getElementById("btn6").onclick = function () {location.href = "mobile.html"};
+if (b1==1){
+  b1=0;
+  sessionStorage.setItem("b1", b1);
+  showdata1()}
+if (b2==1){
+    b2=0;
+  sessionStorage.setItem("b2", b2);
+  showdata2();}
+if (b3==1){
+  b3=0;
+  sessionStorage.setItem("b3", b3);
+  showdata3();}
+if (b4==1){
+  b4=0;
+  sessionStorage.setItem("b4", b4);
+  showdata4();}
+if (b5==1){
+  b5=0;
+  sessionStorage.setItem("b5", b5);
+  showdata5();
+}
 press1.addEventListener('click',showdata1);
 press2.addEventListener('click',showdata2);
 press3.addEventListener('click',showdata3);
@@ -1087,6 +1128,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
   })
+console.log(b1)
+console.log(b2)
+console.log(b3)
+console.log(b4)
+console.log(b5)
 
 
 

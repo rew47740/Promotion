@@ -4,6 +4,7 @@ audio.volume=0;
 beep.volume=0;
 audio.loop=true;
 var x = 0;
+var b=0;
 var play = document.getElementById("play");
 play.style.filter="grayscale(100%)";
 document.getElementById("ok").onclick = function () {
@@ -39,6 +40,7 @@ document.getElementById("ok").onclick = function () {
     if (speedmax==""){
         speedmax = 9999
     }
+    b=1;
     location.href = "main.html";
     sessionStorage.setItem("pricemin", pricemin);
     sessionStorage.setItem("pricemax", pricemax);
@@ -48,6 +50,7 @@ document.getElementById("ok").onclick = function () {
     sessionStorage.setItem("netmax", netmax);
     sessionStorage.setItem("speedmin", speedmin);
     sessionStorage.setItem("speedmax", speedmax);
+    sessionStorage.setItem("b", b);
     console.log(netmax)
     console.log(netmin)
 };
