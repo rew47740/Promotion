@@ -5,7 +5,7 @@ body {
     background-image:  radial-gradient(#ff9191 1.6px, transparent 1.6px), radial-gradient(#ff9191 1.6px, #ffffff 1.6px);
     background-size: 64px 64px;
     background-position: 0 0,32px 32px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     min-height: 100%;
     overflow-x: hidden;
     transition: 0.6s ease all;
@@ -17,7 +17,7 @@ body:focus {
     background-image:  radial-gradient(#91bfff 1.6px, transparent 1.6px), radial-gradient(#91bfff 1.6px, #ffffff 1.6px);
     background-size: 64px 64px;
     background-position: 0 0,32px 32px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     min-height: 100%;
     overflow-x: hidden;
     transition: 0.6s ease all;
@@ -37,7 +37,23 @@ body:focus {
         width: 100%; 
         table-layout: fixed; 
         border-spacing: 10px; 
+        font-size: 17px;
     }
+    .Rowdata {
+        display: table;
+        width: 100%; 
+        table-layout: fixed; 
+        border-spacing: 0px;
+        font-size: 18px;
+        line-height: 2.1;
+    }
+.Column{
+        display: table-cell;
+}
+.Column2{
+    width: 320px;
+    display: table-cell;
+}
 #cl{
     margin-bottom: 0px;
     margin-top: 0px;
@@ -91,7 +107,7 @@ padding-left: 20px;
     line-height: 1.6;
     }
 #btn1{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 130px;
     height: 50px;
@@ -105,7 +121,7 @@ padding-left: 20px;
     transition: 0.6s ease all;
 }
 #btn2{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 110px;
     height: 50px;
@@ -118,7 +134,7 @@ padding-left: 20px;
     color: white;
     transition: 0.6s ease all;}
 #btn3{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 170px;
     height: 50px;
@@ -131,7 +147,7 @@ padding-left: 20px;
     color: white;
     transition: 0.6s ease all;}
 #btn4{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 190px;
     height: 50px;
@@ -144,7 +160,7 @@ padding-left: 20px;
     color: white;
     transition: 0.6s ease all;}
     #btn5{    
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 25px;
         width: 25px;
         height: 50px;
@@ -157,7 +173,7 @@ padding-left: 20px;
         color: white;
         transition: 0.6s ease all;}
         #btn6{      
-            font-family: 'Kodchasan', sans-serif;
+            font-family: Tahoma, sans-serif;
             font-size: 25px;
             width: 260px;
             height: 50px;
@@ -196,7 +212,7 @@ padding-left: 20px;
     font-weight:bolder;}
 #sortprice{
     background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     cursor:pointer;
     outline: none;
@@ -254,16 +270,16 @@ padding-left: 20px;
     bottom:0px;
 }
 #input{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     margin: auto;
     }
 #enter{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     margin-top: auto;
     cursor:pointer;
 }
 .search{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     text-align: right;
     margin-top: 20px;
     display: inline-block;
@@ -294,6 +310,8 @@ padding-left: 20px;
     filter: opacity(0.5);}
 .num{
     float: right;
+    display: inline-block;
+    line-height: 0px;
     text-align: right;
     font-size: 15px;
     font-weight: bolder;
@@ -306,13 +324,13 @@ padding-left: 20px;
     border-radius: 25px;
     background: linear-gradient(126deg, rgb(235, 192, 192) 31%, rgba(255,255,255,1) 100%);
     color: rgb(63, 21, 21);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 2.1;
-    height: 550px;
+    height: 580px;
     overflow-y: scroll;
     overflow-x: hidden;
     transition: 0.3s ease all;
-    letter-spacing: 1px;;
+    letter-spacing: 0px;
     width: 93%;
 }
 .itemright{
@@ -323,13 +341,13 @@ padding-left: 20px;
     border-radius: 25px;
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2.1;
-    height: 550px;
+    height: 580px;
     overflow-y: hidden;
     overflow-x:hidden;
     transition: 0.3s ease all;
-    letter-spacing: 1px;;
+    letter-spacing: 0px;;
 }
 /* .itemleft:hover{
     overflow: scroll;
@@ -389,7 +407,7 @@ padding-left: 20px;
 .dropbtn {
     height: 10px;
     background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     cursor:pointer;
     outline: none;
@@ -403,7 +421,7 @@ padding-left: 20px;
   .dropbtn2 {
     height: 10px;
     background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     cursor:pointer;
     outline: none;
@@ -465,7 +483,7 @@ padding-left: 20px;
 
 #a,#o,#r,#s,#v,#s,#x,#h,#l,#all,#all2{
     font-weight: bolder;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     background: transparent;
     border-left: none;
     border-right: none;

@@ -4,7 +4,7 @@ body {
     opacity: 1;
     background-size: 64px 64px;
     background-position: 0 0,32px 32px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     min-height: 100%;
     overflow-x: hidden;
     transition: 0.6s ease all;
@@ -19,12 +19,27 @@ body {
     padding-top: 40px;
     text-align:left; 
     transition: 0.6s ease all; }
-.Row {
+    .Row {
         display: table;
         width: 100%; 
         table-layout: fixed; 
         border-spacing: 10px; 
     }
+
+.Rowdata {
+        display: table;
+        width: 90%; 
+        table-layout: fixed; 
+        border-spacing: 0px;
+    }
+.Column{
+        display: table-cell;
+}
+.Column2{
+    border-left: 1.3px solid rgb(255, 255, 255);
+    padding-left: 30px;
+    display: table-cell;
+}
     #cl,#cr{
         display: table-cell;
         padding-left: 33%;
@@ -76,7 +91,7 @@ body {
     line-height: 1.6;
     }
 #btn1{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 130px;
     height: 50px;
@@ -90,7 +105,7 @@ body {
     transition: 0.6s ease all;
 }
 #btn2{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 110px;
     height: 50px;
@@ -103,7 +118,7 @@ body {
     color: white;
     transition: 0.6s ease all;}
 #btn3{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 170px;
     height: 50px;
@@ -116,7 +131,7 @@ body {
     color: white;
     transition: 0.6s ease all;}
 #btn4{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 25px;
     width: 190px;
     height: 50px;
@@ -129,7 +144,7 @@ body {
     color: white;
     transition: 0.6s ease all;}
     #btn5{    
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 25px;
         width: 25px;
         height: 50px;
@@ -142,7 +157,7 @@ body {
         color: white;
         transition: 0.6s ease all;}
     #btn6{      
-            font-family: 'Kodchasan', sans-serif;
+            font-family: Tahoma, sans-serif;
             font-size: 25px;
             width: 260px;
             height: 50px;
@@ -180,7 +195,7 @@ body {
     font-weight:bolder;}
 #sortprice{
     background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     cursor:pointer;
     outline: none;
@@ -192,7 +207,7 @@ body {
     transition: 0.6s ease all;}
 #sortcall,#sortcapacity,#sortspeed{
     background-color: transparent;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     cursor:pointer;
     outline: none;
@@ -203,7 +218,7 @@ body {
     transition: 0.6s ease all;}
 #fiveg{
         background-color: rgb(0, 0, 0);
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         border-radius: 25px;
         cursor:pointer;
         outline: none;
@@ -217,7 +232,7 @@ body {
         height: 40px;}
 #fourg{
         background-color: rgb(0, 0, 0);
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         border-radius: 25px;
         cursor:pointer;
         outline: none;
@@ -288,19 +303,19 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     bottom:0px;
 }
 #input{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     margin: auto;
     background-color: rgb(71, 71, 71);
     color: white;
     }
 #enter{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     margin-top: auto;
     cursor:pointer;
     background-color: rgb(37, 37, 37);
     color: white;}
 .search{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: Tahoma, sans-serif;
     text-align: right;
     margin-top: 20px;
     display: inline-block;
@@ -336,7 +351,7 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     border-radius: 25px;
     background-color:#131313;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.9;
     height: 500px;
     overflow: hidden;
@@ -352,7 +367,7 @@ drop-shadow(2px 2px  rgb(75, 75, 75));
     margin-bottom: 20px;
     border-radius: 25px;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.9;
     height: 500px; 
     overflow: hidden;   
@@ -527,7 +542,7 @@ cursor: pointer;}
     background-color: #1b1b1b;
         background-size: 64px 64px;
         background-position: 0 0,32px 32px;
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         min-height: 100%;
         overflow-x: hidden;
         transition: 0.6s ease all;
@@ -606,7 +621,7 @@ cursor: pointer;}
         }
     
     #btn1{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 18px;
         width: 130px;
         height: 50px;
@@ -620,7 +635,7 @@ cursor: pointer;}
         transition: 0.6s ease all;
     }
     #btn2{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 18px;
         width: 110px;
         height: 50px;
@@ -633,7 +648,7 @@ cursor: pointer;}
         color: white;
         transition: 0.6s ease all;}
     #btn3{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 18px;
         width: 190px;
         height: 50px;
@@ -646,7 +661,7 @@ cursor: pointer;}
         color: white;
         transition: 0.6s ease all;}
     #btn4{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         font-size: 18px;
         width: 170px;
         height: 50px;
@@ -659,7 +674,7 @@ cursor: pointer;}
         color: white;
         transition: 0.6s ease all;}
         #btn5{    
-            font-family: 'Kodchasan', sans-serif;
+            font-family: Tahoma, sans-serif;
             font-size: 18px;
             width: 150px;
             height: 50px;
@@ -672,7 +687,7 @@ cursor: pointer;}
             color: white;
             transition: 0.6s ease all;}
             #btn6{      
-                font-family: 'Kodchasan', sans-serif;
+                font-family: Tahoma, sans-serif;
                 font-size: 18px;
                 width: 230px;
                 height: 50px;
@@ -709,7 +724,7 @@ cursor: pointer;}
         font-weight:bolder;}
     #sortprice{
         background-color: transparent;
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         border: none;
         cursor:pointer;
         outline: none;
@@ -722,7 +737,7 @@ cursor: pointer;}
     #sortcall,#sortcapacity,#sortspeed{
         height: 20px;
         background-color: transparent;
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         border: none;
         cursor:pointer;
         outline: none;
@@ -734,7 +749,7 @@ cursor: pointer;}
     #fiveg{
         text-align: center;
             background-color: rgb(29, 29, 29);
-            font-family: 'Kodchasan', sans-serif;
+            font-family: Tahoma, sans-serif;
             border-radius: 25px;
             cursor:pointer;
             outline: none;
@@ -748,7 +763,7 @@ cursor: pointer;}
     #fourg{
         text-align: center;
             background-color: rgb(29, 29, 29);
-            font-family: 'Kodchasan', sans-serif;
+            font-family: Tahoma, sans-serif;
             border-radius: 25px;
             cursor:pointer;
             outline: none;
@@ -814,16 +829,16 @@ cursor: pointer;}
         bottom:0px;
     }
     #input{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         margin: auto;
         }
     #enter{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         margin-top: auto;
         cursor:pointer;
     }
     .search{
-        font-family: 'Kodchasan', sans-serif;
+        font-family: Tahoma, sans-serif;
         text-align: right;
         margin-top: 20px;
         display: inline-block;
