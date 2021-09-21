@@ -39,7 +39,7 @@ body:focus {
         border-spacing: 10px; 
         font-size: 17px;
     }
-    .Rowdata {
+.Rowdata {
         display: table;
         width: 100%; 
         table-layout: fixed; 
@@ -102,7 +102,7 @@ body:focus {
     font-size: 15px;
     padding-bottom: 20px;
     margin: 15px;
-padding-left: 20px;
+    padding-left: 20px;
     margin-top: 15px;
     line-height: 1.6;
     }
@@ -309,6 +309,7 @@ padding-left: 20px;
 #home:hover{
     filter: opacity(0.5);}
 .num{
+    margin-top: 10px;
     float: right;
     display: inline-block;
     line-height: 0px;
@@ -317,6 +318,7 @@ padding-left: 20px;
     font-weight: bolder;
 }
 .itemleft{
+    
     display: inline-block;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     padding: 20px;
@@ -331,7 +333,7 @@ padding-left: 20px;
     overflow-x: hidden;
     transition: 0.3s ease all;
     letter-spacing: 0px;
-    width: 93%;
+    width: 95%;
 }
 .itemright{
     width: 93%;
@@ -500,4 +502,68 @@ padding-left: 20px;
 background: #ddd;
 cursor: pointer;
 border-radius: 25px;
+}
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+  }
+.to{
+    display: inline-block;
+    color: #ddd;
+}
+.compares{
+    font-family: Tahoma, sans-serif;
+    transition: 0.6s ease all;
+    animation: growDown 300ms ease-in-out forwards;
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    width: 470px;
+    border-radius: 25px 25px 0px 0px; 
+    position: fixed;
+    bottom: -65px;
+    left: 5px;
+    padding-top: 0px;
+}
+.compares:hover{
+    transition: 0.6s ease all;
+    animation: growDown 300ms ease-in-out forwards;
+    bottom: 0px;
+}
+
+.arrow{
+    color: white;
+    text-align: center;
+    line-height: 0px;
+    font-size: 25px;
+}
+#compare{
+    font-size: 15px;
+    margin-left: 0px;
+    background-color: white;
+    border-radius: 20px;
+}
+#compare:hover{
+cursor: pointer;
+background-color: rgb(221, 221, 221);
+}
+#clear{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 10px;
+}
+#clear:hover{
+    cursor: pointer;
+}
+#mobile1,#mobile2{
+    margin-top: 20px;
+    font-size: 15px;
+    width: 155px;
 }

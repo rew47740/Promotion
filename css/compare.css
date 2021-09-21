@@ -1,0 +1,26 @@
+.Rowdata {
+    background: linear-gradient(126deg, rgb(235, 192, 192) 31%, rgba(255,255,255,1) 100%);
+    font-family: Tahoma, sans-serif;
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 50px 0px;
+    font-size: 20px;
+    line-height: 2.1;
+    border-bottom: 1px solid black;
+}
+.Column{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: table-cell;
+}
+.Column1{
+    padding-right: 10px;
+    display: table-cell;
+    border-right: 2px solid black;
+    }
+.Column2{
+    width: 300px;
+    display: table-cell;
+    border-right: 2px solid black;
+}

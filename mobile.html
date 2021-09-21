@@ -123,12 +123,22 @@ window.onclick = function(event) {
               </div>
             <button id=sortprice>เรียงตามราคา</button>
             <div class = search>                
-                <input id="input" list = "list" type="text"placeholder="ค้นหา...">
+                <input id="input" list = "list" type="text"placeholder="ค้นหา..."><button id="clear"onclick="document.getElementById('input').value = ''" title="Clear">x</button></input>
                 <datalist id="list"></datalist>  
                 <button id="enter">ค้นหา</button>
             </div>  
+        </div>
         </header>
         <div class="main">
+          <div class = compares>    
+            <p class = arrow>เปรียบเทียบ ▲</p>            
+            <input id="mobile1" list = "list1" type="text"placeholder="ค้นหา..."><button id="clear"onclick="document.getElementById('mobile1').value = ''" title="Clear">x</button></input>
+            <datalist id="list1"></datalist>  
+            <div class = "to"> - </div>
+            <input id="mobile2" list = "list1" type="text"placeholder="ค้นหา..."><button id="clear"onclick="document.getElementById('mobile2').value = ''" title="Clear">x</button></input>
+            <datalist id="list1"></datalist> 
+            <button id="compare">เปรียบเทียบ</button>
+        </div>  
             <div class="Row">
                 <div id="true"><img src="img/true.png" id="imgtrue"  ></div>   
             </div>
