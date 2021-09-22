@@ -168,9 +168,9 @@ body:focus {
 #btn5{    
     font-family: Tahoma, sans-serif;
     font-size: 25px;
-    width: 190px;
+    width: 100px;
     height: 50px;
-    margin-right:5px;
+    margin-right:40px;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -183,7 +183,6 @@ body:focus {
         font-size: 25px;
         width: 260px;
         height: 50px;
-        margin-left: 5px;
         background-color: Transparent;
         background-repeat:no-repeat;
         border: none;
@@ -194,7 +193,7 @@ body:focus {
         #btn6:hover{
             text-decoration: underline;
             font-size: 30px;
-            width: 330px;
+            width: 300px;
             color:rgb(255, 235, 170);}
     #btn3:hover,#btn4:hover{
         text-decoration: underline;
@@ -205,7 +204,7 @@ body:focus {
     #btn5:hover{
         text-decoration: underline;
         font-size: 30px;
-        width: 200px;
+        width: 120px;
         color:rgb(255, 235, 170);}
 #btn1:hover,#btn2:hover{
     text-decoration: underline;
