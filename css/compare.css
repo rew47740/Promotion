@@ -7,7 +7,7 @@
     border-spacing: 50px 0px;
     font-size: 20px;
     line-height: 2.1;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 .Column{
     padding-top: 10px;
@@ -20,7 +20,7 @@
     border-right: 2px solid black;
     }
 .Column2{
-    width: 330px;
+    width: 340px;
     display: table-cell;
     border-right: 2px solid black;
 }
